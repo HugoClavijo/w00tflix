@@ -1,11 +1,6 @@
 <!DOCTYPE HTML>
-<!--
-   Broadcast by TEMPLATED
-   templated.co @templatedco
-   Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
-   <head>
    <head>
       <title>W00tflix</title>
       <meta charset="utf-8" />
@@ -23,8 +18,8 @@
       <!-- Nav    -->
           <nav id="menu">
             <ul class="links">
-               <li><a href="../index.html">Home</a></li>
-               <li><a href="pages/quienes_somos/quienes_somos.html">Acerca de</a></li>
+               <li><a href="../index.php">Home</a></li>
+               <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contactenos</a></li>
                <li><a href="pages/login/login.php">Login</a></li>
             </ul>

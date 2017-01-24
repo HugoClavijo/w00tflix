@@ -11,17 +11,17 @@
 
       <!-- Header -->
          <header id="header">
-            <h1><a href="#">W00tflix - Acerca de nosotros<span> ...</span></a></h1>
+            <h1><a href="#">W00tflix - Acerca de nosotros<span></span></a></h1>
             <a href="#menu">Menu</a>
          </header>
 
       <!-- Nav -->
          <nav id="menu">
             <ul class="links">
-               <li><a href="../../index.html">Home</a></li>
-               <li><a href="../quienes_somos/quienes_somos.html">Acerca de</a></li>
-               <li><a href="../contactenos/contacto.html">Contáctenos</a></li>
-               <li><a href="../login/index.html">Login</a></li>
+               <li><a href="../../index.php">Home</a></li>
+               <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
+               <li><a href="../contactenos/contacto.php">Contáctenos</a></li>
+               <li><a href="../login/index.php">Login</a></li>
             </ul>
          </nav>
             

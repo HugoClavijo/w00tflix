@@ -18,10 +18,10 @@
       <!-- Nav -->
          <nav id="menu">
             <ul class="links">
-               <li><a href="../../index.html">Home</a></li>
-               <li><a href="../quienes_somos/quienes_somos.html">Acerca de</a></li>
-               <li><a href="../contactenos/contacto.html">Contactenos</a></li>
-               <li><a href="../login/index.html">Login</a></li>
+               <li><a href="../../index.php">Home</a></li>
+               <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
+               <li><a href="../contactenos/contacto.php">Contactenos</a></li>
+               <li><a href="../login/index.php">Login</a></li>
             </ul>
          </nav>
             
@@ -80,5 +80,3 @@
 
    </body>
 </html>
-
-
