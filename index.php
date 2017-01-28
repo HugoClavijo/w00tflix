@@ -15,7 +15,7 @@ echo "This is PHP code";
       <!-- Header -->
          <header id="header">
             <h1><a href="#">W00tflix<span></span></a></h1>
-            <!-- <a href="#menu">Menu</a> -->
+            <a href="#menu">Menu</a> 
          </header>
 
      <!-- Nav -->

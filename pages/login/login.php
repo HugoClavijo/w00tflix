@@ -17,7 +17,7 @@
 
       <!-- Header -->
          <header id="header">
-            <h1><a href="../../index.html">W00tflix<span></span></a></h1>
+            <h1><a href="../../index.php">W00tflix<span></span></a></h1>
     
     </header>
     
@@ -32,7 +32,7 @@
         <div id="signup">   
           <div class="tituloo">Registrate para entrar</div>
           
-          <form action="../../index2.html" method="post">
+          <form action="../../index2.php" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
@@ -74,7 +74,7 @@
         <div id="login">   
           <div class="tituloo">Bienvenido!</div>
           
-          <form action="../../index2.html" method="post">
+          <form action="../../index2.php" method="post">
           
             <div class="field-wrap">
             <label>

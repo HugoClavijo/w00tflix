@@ -11,7 +11,7 @@
 
       <!-- Header -->
          <header id="header">
-            <h1><a href="../../index.html">W00tflix - Contáctenos<span></span></a></h1>
+            <h1><a href="../../index.php">W00tflix - Contáctenos<span></span></a></h1>
             <a href="#menu">Menu</a>
          </header>
 
