@@ -1,7 +1,7 @@
-<?php
-
-?>
-
+      <?php
+echo "This is PHP code";
+   ?>
+   
 <!DOCTYPE HTML>
 
 <html>
@@ -12,22 +12,21 @@
       <link rel="stylesheet" href="assets/css/main.css" />
    </head>
    <body>
-
       <!-- Header -->
          <header id="header">
             <h1><a href="#">W00tflix<span></span></a></h1>
             <!-- <a href="#menu">Menu</a> -->
          </header>
 
-      <!-- Nav 
+     <!-- Nav -->
          <nav id="menu">
             <ul class="links">
-               <li><a href="../index.html">Home</a></li>
-               <li><a href="pages/quienes_somos/quienes_somos.html">Acerca de</a></li>
-               <li><a href="pages/contactenos/contacto.html">Contactenos</a></li>
-               <li><a href="pages/login/login.html">Login</a></li>
+               <li><a href="index.php">Home</a></li>
+               <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
+               <li><a href="pages/contactenos/contacto.php">Contáctenos</a></li>
+               <li><a href="pages/login/index.php">Login</a></li>
             </ul>
-         </nav> -->
+         </nav>
     
          
             <section id="banner" data-video="images/banner0">
@@ -36,16 +35,13 @@
                      <h1>W00tflix</h1>
                      <p>Tu mejor alternativa en entretenimiento e interaccion.</p>
                   </header>
-                  <a href="pages/login/login.html" class="button big alt scrolly">Comenzar</a>
+                  <a href="pages/login/login.php" class="button big alt scrolly">Comenzar</a>
                   <!--a href="#main" class="button big alt scrolly">Ver mas</a-->
                </div>
 
             </section>
 
-      <!-- Main -->
-         <div id="main">
-         </div>
-
+      
       <!-- Footer -->
          <footer id="footer">
             <div class="inner">
