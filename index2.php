@@ -1,3 +1,7 @@
+      <?php
+echo "This is PHP code";
+   ?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -64,7 +68,7 @@
                               </div>
                            </div>
                            
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
+                           <a href="generic.php" class="link"><span>Click Me</span></a>
                         </div>
                         <div class="video col">
                            <div class="image fit">
@@ -74,7 +78,7 @@
                               </div>
                            </div>
                            
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
+                           <a href="generic.php" class="link"><span>Click Me</span></a>
                         </div>
                      </div>
                </div>
@@ -91,7 +95,7 @@
                      <div class="flex flex-tabs">
                         <ul class="tab-list">
                            <li><a href="#" data-tab="tab-1" class="active">Arte/Cultura/Eventos</a></li>
-                           <li><a href="#" data-tab="tab-2">Musica/Composicion/Interpretacion</a></li>
+                           <li><a href="#" data-tab="tab-2">Diseño/Composición/Producción</a></li>
                            <li><a href="#" data-tab="tab-3">Pintores/Escultores/Artesanos</a></li>
                         </ul>
                         <div class="tabs">
@@ -106,7 +110,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -116,7 +120,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -126,7 +130,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -136,7 +140,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -146,7 +150,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -156,7 +160,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
@@ -170,7 +174,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -180,7 +184,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -190,7 +194,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -200,7 +204,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -210,7 +214,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -220,7 +224,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
@@ -234,7 +238,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -244,7 +248,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -254,7 +258,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -264,7 +268,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -274,7 +278,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -284,7 +288,7 @@
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.html" class="link"><span>Click Me</span></a>
+                                       <a href="generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
@@ -313,7 +317,7 @@
                            <p class="caption">
                               El Evento mas seguido 
                            </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
+                           <a href="generic.php" class="link"><span>Click Me</span></a>
                         </div>
                         <div class="video col">
                            <div class="image fit">
@@ -325,7 +329,7 @@
                            <p class="caption">
                               lo mejor en musica nacional
                            </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
+                           <a href="generic.php" class="link"><span>Click Me</span></a>
                         </div>
                         <div class="video col">
                            <div class="image fit">
@@ -337,7 +341,7 @@
                            <p class="caption">
                               Arte Plastico
                            </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
+                           <a href="generic.php" class="link"><span>Click Me</span></a>
                         </div>
                      </div>
                </div>            </section>
