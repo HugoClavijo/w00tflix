@@ -6,6 +6,7 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="assets/css/main.css" />
+      <script type="text/javascript" src="js/livesearch.js"></script><!--Pilas.................. -->
    </head>
    <body>
 
@@ -36,17 +37,23 @@
                      <h2>Bienvenido...</h2>
                      
 
-                     <form method="post" action="#">
+                     <!--<form method="post" action="#">
                            <div class="row uniform">
                               <div class="9u 12u$(small)">
-                                 <input type="text" name="query" id="query" value="" placeholder="Query" />
+                                 <input type="text" name="query" id="query" value="" onkeyup="showResult(this.value)" value="Busqueda..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Busqueda...';}"/>
                               </div>
                               <div class="3u$ 12u$(small)">
                                  <input type="submit" value="Search" class="fit" />
                               </div>
                            </div>
-                        </form>
+                        </form>-->
 
+                <form>
+					<input type="text" size="30" onkeyup="showResult(this.value)" value="Busqueda..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Busqueda...';}">
+					<div id="livesearch"></div>
+					</form>
+					
+					
                   </header>
                   <!-- 2 Column Video Section -->
                      <div class="flex flex-2">

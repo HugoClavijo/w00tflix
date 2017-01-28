@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pages>
+  <link>
+    <title>Contacto</title>
+    <url>../pages/contactenos/contacto.php</url>
+  </link>
+  <link>
+    <title>Quienes Somos</title>
+    <url>../pages/quienes_somos/quienes_somos.php</url>
+  </link>
+</pages>
