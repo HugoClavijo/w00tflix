@@ -6,7 +6,6 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="assets/css/main.css" />
-      <script type="text/javascript" src="js/livesearch.js"></script><!--Pilas.................. -->
    </head>
    <body>
 
@@ -367,6 +366,6 @@
          <script src="assets/js/skel.min.js"></script>
          <script src="assets/js/util.js"></script>
          <script src="assets/js/main.js"></script>
-
+         <script type="text/javascript" src="assets/js/livesearch.js"></script><!--Pilas.................. -->
    </body>
 </html>
