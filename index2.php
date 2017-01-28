@@ -68,7 +68,7 @@ echo "This is PHP code";
                               </div>
                            </div>
                            
-                           <a href="generic.php" class="link"><span>Click Me</span></a>
+                           <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                         </div>
                         <div class="video col">
                            <div class="image fit">
@@ -78,7 +78,7 @@ echo "This is PHP code";
                               </div>
                            </div>
                            
-                           <a href="generic.php" class="link"><span>Click Me</span></a>
+                           <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                         </div>
                      </div>
                </div>
@@ -110,7 +110,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -120,7 +120,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -130,7 +130,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -140,7 +140,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -150,7 +150,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -160,7 +160,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
@@ -174,7 +174,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -184,7 +184,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -194,7 +194,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -204,7 +204,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -214,7 +214,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -224,7 +224,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
@@ -238,7 +238,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -248,7 +248,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -258,7 +258,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -268,7 +268,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -278,7 +278,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                                  <!-- Video Thumbnail -->
                                     <div class="video col">
@@ -288,7 +288,7 @@ echo "This is PHP code";
                                              <div class="icon fa-play"></div>
                                           </div>
                                        </div>
-                                       <a href="generic.php" class="link"><span>Click Me</span></a>
+                                       <a href="pages/generic.php" class="link"><span>Click Me</span></a>
                                     </div>
                               </div>
 
