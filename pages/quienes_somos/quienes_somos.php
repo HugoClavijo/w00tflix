@@ -1,3 +1,8 @@
+<?php 
+			
+	echo "codigo php";
+?>
+
 <!DOCTYPE HTML>
 
 <html>
