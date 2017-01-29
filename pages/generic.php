@@ -49,6 +49,19 @@ echo "This is PHP code";
 						</div>
 						<p>Curabitur venenatis lorem ut finibus finibus. Ut quis eleifend libero, nec ultricies metus. Morbi magna risus, congue sit amet pellentesque eget, malesuada ut justo. Sed ac pretium quam. Ut vel ex vitae enim sagittis posuere ac id erat. Vestibulum vel ullamcorper tellus. Donec sapien massa, venenatis ac felis vel, vestibulum sagittis enim. Maecenas ut egestas lorem, nec luctus ligula. Vestibulum neque diam, aliquet non enim a, cursus lacinia metus. Aenean fringilla luctus rhoncus. Integer vulputate massa ac suscipit venenatis. Integer luctus elit non nulla fringilla, ullamcorper maximus sem congue. Integer tristique eu nisi nec fermentum. Ut malesuada quis massa at ultricies.</p>
 						<p>Donec molestie tellus eu tincidunt dignissim. Sed sollicitudin bibendum ultricies. Vivamus tristique justo lacinia dui tempus consequat. Sed hendrerit justo in nisl auctor, id rutrum tortor congue. Vivamus mattis nibh et sem rutrum, vel viverra purus viverra. Donec et justo at orci euismod hendrerit vel vel neque. Donec gravida ipsum in augue volutpat laoreet. Ut lobortis turpis sit amet sodales ultrices.</p>
+					 
+					 
+					 <div class="comment_input">
+        <form name="form1">
+            <textarea name="comments" placeholder="Deja tus comentarios..." ></textarea></br></br>
+            <a href="#" onClick="commentSubmit()" class="button">Post</a></br>
+        </form>
+    </div>
+    <div id="comment_logs">
+    	Cargando comentarios...
+    </div>
+    	
+    	
 					</div>
 				</section>
 
@@ -123,6 +136,6 @@ echo "This is PHP code";
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="..//js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-
+			<script src="../assets/js/comments.js"></script>
 	</body>
 </html>
