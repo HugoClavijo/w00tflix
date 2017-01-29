@@ -9,21 +9,21 @@ can work correctly.
 ******************************************************/
 
 //We log to the DataBase
-mysql_connect('hote', 'username', 'password');
-mysql_select_db('database');
+mysql_connect('hugoclavijo-demo-4343394', 'hugoclavijo', '');
+mysql_select_db('c9');
 
 //Webmaster Email
 $mail_webmaster = 'example@example.com';
 
 //Top site root URL
-$url_root = 'http://www.example.com/';
+$url_root = 'https://w00tflix-hugoclavijo.c9users.io/';
 
 /******************************************************
 -----------------Optional Configuration----------------
 ******************************************************/
 
 //Home page file name
-$url_home = 'index.php';
+$url_home = '../../index2.php';
 
 //Design Name
 $design = 'default';
