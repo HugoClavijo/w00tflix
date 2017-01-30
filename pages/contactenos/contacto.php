@@ -1,3 +1,8 @@
+<?php
+ session_start();
+
+?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -21,7 +26,7 @@
                <li><a href="../../index.php">Home</a></li>
                <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="../contactenos/contacto.php">Contactenos</a></li>
-               <li><a href="../login/index.php">Login</a></li>
+               <li><a href="../login/login.php">Login</a></li>
             </ul>
          </nav>
             
