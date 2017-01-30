@@ -65,17 +65,17 @@ if (isset($_SESSION['carrera'])){
           </div>
 
           <div class="field-wrap">
-            <label  for="correo">
-              Correo electronico<span class="req">*</span>
+            <label  for="correo1">
+              Correo electrónico<span class="req">*</span>
             </label>
-            <input name="correo" type="email" required autocomplete="off"/>
+            <input name="correo1" type="email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
-            <label for="contrasena">
-              Contrasena<span class="req">*</span>
+            <label for="contraseña1">
+              Contraseña<span class="req">*</span>
             </label>
-            <input name="contrasena" type="password" required autocomplete="off"/>
+            <input name="contraseña1" type="password" required autocomplete="off"/>
           </div>
           
           <button type="submit" class="button button-block">Empecemos</button> 
@@ -92,17 +92,17 @@ if (isset($_SESSION['carrera'])){
           <form action="../../index2.php" method="POST" enctype="multipart/form-data">
           
             <div class="field-wrap">
-            <label for="correo">
+            <label for="correo2">
               Correo electronico<span class="req">*</span>
             </label>
-            <input name="correo" type="email" required autocomplete="off"/>
+            <input name="correo2" type="email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
-            <label for="contrasena">
+            <label for="contraseña2">
               Contraseña<span class="req">*</span>
             </label>
-            <input name="contrasena" type="password" required autocomplete="off"/>
+            <input name="contraseña2" type="password" required autocomplete="off"/>
           </div>
           
           <p class="forgot"><a href="#">Olvidaste tu contraseña?</a></p>
