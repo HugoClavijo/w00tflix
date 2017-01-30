@@ -88,3 +88,45 @@ WITH (
 );
 ALTER TABLE public.mensajes_enviados
   OWNER TO postgres;
+  
+  CREATE TABLE public.tipo_usuarios
+(
+  idtipo_usuarios integer NOT NULL,
+  idusuario integer,
+  detalle character varying(50),
+  CONSTRAINT "PKTIPOUSER" PRIMARY KEY (idtipo_usuarios)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.tipo_usuarios
+  OWNER TO postgres;
+
+CREATE TABLE public.usuarios
+(
+  idusuario integer NOT NULL,
+  nombre character varying(20),
+  correo character varying(10),
+  tipo integer,
+  "user" character varying(10),
+  clave character varying(10),
+  CONSTRAINT "PKUSUSARIOS" PRIMARY KEY (idusuario)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.usuarios
+  OWNER TO postgres;
+
+CREATE TABLE public.usuarios_bloqueados
+(
+  idusuario_bloqueado integer NOT NULL,
+  fecha_bloqueo date,
+  idusuario integer,
+  CONSTRAINT "PKBLOQUEADOS" PRIMARY KEY (idusuario_bloqueado)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.usuarios_bloqueados
+  OWNER TO postgres;
