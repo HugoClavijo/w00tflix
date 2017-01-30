@@ -22,6 +22,8 @@
 $nombres = $_POST['nombres'];
 $apellidos = $_POST['apellidos'];
 
+
+
 $_SESSION['carrera'] = $_POST['nombres'];
 
 
