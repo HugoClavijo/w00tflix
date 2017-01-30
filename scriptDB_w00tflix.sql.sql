@@ -130,3 +130,34 @@ WITH (
 );
 ALTER TABLE public.usuarios_bloqueados
   OWNER TO postgres;
+  
+  CREATE TABLE public.video
+(
+  idvideo integer NOT NULL,
+  idusuario integer,
+  iddetalle integer,
+  idcategoria integer,
+  idranking integer,
+  descripcion character varying(30),
+  CONSTRAINT "PKVIDEO" PRIMARY KEY (idvideo),
+  CONSTRAINT unicovideo UNIQUE (idvideo)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.video
+  OWNER TO postgres;
+
+CREATE TABLE public.video_ranking
+(
+  idvideo_ranking integer NOT NULL,
+  estrellas integer,
+  cant_reproducciones integer,
+  puesto integer,
+  CONSTRAINT "PKRANKING" PRIMARY KEY (idvideo_ranking)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.video_ranking
+  OWNER TO postgres;
