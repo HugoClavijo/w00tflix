@@ -1,16 +1,9 @@
-<<<<<<< HEAD
-      <?php
-echo "This is PHP code";
-   ?>
 
-<!DOCTYPE HTML>
-=======
 <?php
  session_start();
 
 ?>
 
->>>>>>> refs/remotes/origin/master
 
 
 <!DOCTYPE HTML>
@@ -428,12 +421,12 @@ if (isset($_SESSION['carrera'])){
          <script src="assets/js/util.js"></script>
        <script src="assets/js/usuarios.js"></script>
          <script src="assets/js/main.js"></script>
-<<<<<<< HEAD
+
          <script type="text/javascript" src="assets/js/livesearch.js"></script>
-=======
+
        	 
 
->>>>>>> refs/remotes/origin/master
+
    </body>
 </html>
 

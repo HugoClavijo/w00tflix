@@ -31,11 +31,8 @@ if (isset($_SESSION['carrera'])){
     
       <!-- Header -->
          <header id="header">
-<<<<<<< HEAD
+
             <h1><a href="../../index.php">W00tflix<span></span></a></h1>
-=======
-            <h1><a href="../../../index.php">W00tflix<span></span></a></h1>
->>>>>>> refs/remotes/origin/master
     
     </header>
     
@@ -50,11 +47,9 @@ if (isset($_SESSION['carrera'])){
         <div id="signup">   
           <div class="tituloo">Registrate para entrar</div>
           
-<<<<<<< HEAD
-          <form action="../../index2.php" method="post">
-=======
+
           <form action="../../index2.php" method="POST" enctype="multipart/form-data">
->>>>>>> refs/remotes/origin/master
+
           
           <div class="top-row">
             <div class="field-wrap">
@@ -97,11 +92,9 @@ if (isset($_SESSION['carrera'])){
         <div id="login">   
           <div class="tituloo">Bienvenido!</div>
           
-<<<<<<< HEAD
-          <form action="../../index2.php" method="post">
-=======
+
           <form action="../../index2.php" method="POST" enctype="multipart/form-data">
->>>>>>> refs/remotes/origin/master
+
           
             <div class="field-wrap">
             <label for="correo2">
