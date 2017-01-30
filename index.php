@@ -1,7 +1,7 @@
-      <?php
-echo "This is PHP code";
-   ?>
-   
+<?php
+session_start();
+?>
+
 <!DOCTYPE HTML>
 
 <html>
@@ -12,10 +12,29 @@ echo "This is PHP code";
       <link rel="stylesheet" href="assets/css/main.css" />
    </head>
    <body>
+       
+       
+       
+<?php
+
+
+if (isset($_SESSION['carrera'])){    
+header('Location: index2.php');
+}else{
+
+
+?>
+    
+       
+       
       <!-- Header -->
          <header id="header">
             <h1><a href="#">W00tflix<span></span></a></h1>
+<<<<<<< HEAD
             <a href="#menu">Menu</a>
+=======
+            <a href="#menu">Menu</a> 
+>>>>>>> refs/remotes/origin/master
          </header>
 
      <!-- Nav -->
@@ -24,7 +43,7 @@ echo "This is PHP code";
                <li><a href="index.php">Home</a></li>
                <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contáctenos</a></li>
-               <li><a href="pages/login/index.php">Login</a></li>
+               <li><a href="pages/login/login.php">Login</a></li>
             </ul>
          </nav>
     
@@ -67,3 +86,9 @@ echo "This is PHP code";
 
    </body>
 </html>
+
+
+<?php
+
+}
+?>

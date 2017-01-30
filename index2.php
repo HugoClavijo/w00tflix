@@ -1,34 +1,91 @@
+<<<<<<< HEAD
       <?php
 echo "This is PHP code";
    ?>
 
 <!DOCTYPE HTML>
+=======
+<?php
+ session_start();
 
+?>
+
+>>>>>>> refs/remotes/origin/master
+
+
+<!DOCTYPE HTML>
 <html>
    <head>
       <title>W00tflix</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/usuario.css" />
+       
+       
    </head>
    <body>
 
+<?php
+$nombres = $_POST['nombres'];
+$apellidos = $_POST['apellidos'];
+
+
+
+$_SESSION['carrera'] = $_POST['nombres'];
+
+
+if (isset($_SESSION['carrera'])){    
+//echo 'Se ha creado sesión <br>';
+
+
+
+
+?>
+            
+       
+       
+       
+       
       <!-- Header -->
-         <header id="header">
-            <h1>W00tflix</h1>
+        <header id="header">
+            <h1><a href="index.php">W00tflix<span> ...</span></a></h1>
+            
+             
+			<a href="#menu2">
+                <?php 
+                print $nombres;
+                ?>
+             </a>
             <a href="#menu">Menu</a>
          </header>
 
       <!-- Nav    -->
+       
+	  
+         <nav id="menu2">
+		    <image class="ima" src="images/juancarlos.jpg" width="90px" />
+			<ul class="links2">
+			
+				<li><a href="#" class="boton2 button small alt ">Editar cuenta</a></li>
+				<li><a href="logout.php" class="boton1 button small alt ">Salir sesión</a></li>
+			</ul>
+         </nav>
+	       
           <nav id="menu">
             <ul class="links">
                <li><a href="../index.php">Home</a></li>
                <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contactenos</a></li>
-               <li><a href="pages/login/login.php">Login</a></li>
+              
             </ul>
          </nav>
      
+       
+       
+       
+  
+       
 
       <!-- Main -->
          <div id="main">
@@ -369,7 +426,22 @@ echo "This is PHP code";
          <script src="assets/js/jquery.scrolly.min.js"></script>
          <script src="assets/js/skel.min.js"></script>
          <script src="assets/js/util.js"></script>
+       <script src="assets/js/usuarios.js"></script>
          <script src="assets/js/main.js"></script>
+<<<<<<< HEAD
          <script type="text/javascript" src="assets/js/livesearch.js"></script>
+=======
+       	 
+
+>>>>>>> refs/remotes/origin/master
    </body>
 </html>
+
+
+
+<?php
+}else{
+//header('Location: pages/login/login.php');
+    header('Location: index.php');
+}
+?>
