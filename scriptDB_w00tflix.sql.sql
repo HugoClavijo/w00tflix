@@ -161,3 +161,27 @@ WITH (
 );
 ALTER TABLE public.video_ranking
   OWNER TO postgres;
+  CREATE TABLE public.mensajes_recibidos
+(
+  idmensajes_recibidos integer NOT NULL,
+  idusuario integer,
+  mensaje character varying(140),
+  CONSTRAINT "PKMENSAJERECIBIDO" PRIMARY KEY (idmensajes_recibidos)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.mensajes_recibidos
+  OWNER TO postgres;
+  CREATE TABLE public.mensajes_recibidos
+(
+  idmensajes_recibidos integer NOT NULL,
+  idusuario integer,
+  mensaje character varying(140),
+  CONSTRAINT "PKMENSAJERECIBIDO" PRIMARY KEY (idmensajes_recibidos)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.mensajes_recibidos
+  OWNER TO postgres;
