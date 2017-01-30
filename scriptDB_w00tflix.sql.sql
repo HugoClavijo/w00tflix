@@ -47,3 +47,44 @@ WITH (
 );
 ALTER TABLE public.detalle_videos
   OWNER TO postgres;
+  
+  CREATE TABLE public.historial
+(
+  idhistorial integer NOT NULL,
+  idusuario integer,
+  idvideo integer,
+  fecha_entrada date,
+  hora_entrada time(6) with time zone,
+  CONSTRAINT "PKHISTORIAL" PRIMARY KEY (idhistorial)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.historial
+  OWNER TO postgres;
+
+CREATE TABLE public.lista_favoritas
+(
+  idlista_favoritos integer NOT NULL,
+  idusuario integer,
+  idvideo integer,
+  CONSTRAINT "PKFAVORITOS" PRIMARY KEY (idlista_favoritos)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.lista_favoritas
+  OWNER TO postgres;
+
+CREATE TABLE public.mensajes_enviados
+(
+  idmensaje_enviado integer NOT NULL,
+  idusuario integer,
+  mensaje character varying(140),
+  CONSTRAINT "PKMENSAJEENVIADO" PRIMARY KEY (idmensaje_enviado)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.mensajes_enviados
+  OWNER TO postgres;
