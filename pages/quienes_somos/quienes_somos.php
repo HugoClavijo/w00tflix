@@ -26,7 +26,7 @@
                <li><a href="../../index.php">Home</a></li>
                <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="../contactenos/contacto.php">Contáctenos</a></li>
-               <li><a href="../login/index.php">Login</a></li>
+               <li><a href="../login/login.php">Login</a></li>
             </ul>
          </nav>
             
