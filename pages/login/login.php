@@ -1,3 +1,6 @@
+<?
+session_start();
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -14,10 +17,21 @@
 
 <body>
 
+<?php
+echo $_SESSION['carrera'];
 
+if (isset($_SESSION['carrera'])){    
+//echo 'Se ha creado sesión <br>';
+ header('Location: ../../index.php');
+
+}else{
+
+?>
+    
+    
       <!-- Header -->
          <header id="header">
-            <h1><a href="../../index.php">W00tflix<span></span></a></h1>
+            <h1><a href="../../../index.php">W00tflix<span></span></a></h1>
     
     </header>
     
@@ -32,41 +46,42 @@
         <div id="signup">   
           <div class="tituloo">Registrate para entrar</div>
           
-          <form action="../../index2.php" method="post">
+          <form action="../../index2.php" method="POST" enctype="multipart/form-data">
           
           <div class="top-row">
             <div class="field-wrap">
-              <label>
+              <label for="nombres">
                 Nombres<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input id="nombres"  name="nombres" type="text" required autocomplete="off" />
             </div>
         
             <div class="field-wrap">
-              <label>
+              <label for="apellidos">
                 Apellidos<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input id ="apellidos" name="apellidos"  type="text" required autocomplete="off"/>
             </div>
           </div>
 
           <div class="field-wrap">
-            <label>
+            <label  for="correo">
               Correo electronico<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input name="correo" type="email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
-            <label>
+            <label for="contrasena">
               Contrasena<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input name="contrasena" type="password" required autocomplete="off"/>
           </div>
           
           <button type="submit" class="button button-block">Empecemos</button> 
-		  <a href="https://www.facebook.com/"><img src="../../images/face.png" width="480px" style="position:relative; margin-left:-30px; margin-top:-25px;" /></a>
-          
+             <br>
+		  <a href="https://www.facebook.com/"><img id="face_button" src="../../images/fb.png" width="30px" style="position:absolute; margin-left:0px; margin-top:5px; " /> <p id="face_text " style="position:absolute; margin-left:35px; margin-top:13px;">Entrar con facebook</p></a>
+            <br>
           </form>
 
         </div>
@@ -74,25 +89,25 @@
         <div id="login">   
           <div class="tituloo">Bienvenido!</div>
           
-          <form action="../../index2.php" method="post">
+          <form action="../../index2.php" method="POST" enctype="multipart/form-data">
           
             <div class="field-wrap">
-            <label>
+            <label for="correo">
               Correo electronico<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input name="correo" type="email" required autocomplete="off"/>
           </div>
           
           <div class="field-wrap">
-            <label>
+            <label for="contrasena">
               Contraseña<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input name="contrasena" type="password" required autocomplete="off"/>
           </div>
           
           <p class="forgot"><a href="#">Olvidaste tu contraseña?</a></p>
           
-          <button class="button button-block" onclick="parent.location.href('http://www.pagina.com');">Ingresa</button>
+          <button type="submit" class="button button-block" >Ingresa</button>
           
           </form>
 
@@ -111,7 +126,11 @@
    <script src="../assets/js/util.js"></script>
    <script src="../assets/js/main.js"></script>
    
-   
     </div>
 </body>
 </html>
+
+<?php
+}
+
+?>
