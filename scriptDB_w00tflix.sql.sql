@@ -133,9 +133,11 @@ ALTER TABLE public.mensajes_recibidos
 CREATE TABLE public.tipo_usuarios
 (
   idtipo_usuarios integer NOT NULL,
-  idusuario integer,
   detalle character varying(50),
   CONSTRAINT "PKTIPOUSER" PRIMARY KEY (idtipo_usuarios)
+	 CONSTRAINT "FKTPIUSUARIO" FOREIGN KEY (idtipousuarios)
+      REFERENCES public.usuarios (idtipousuarios) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
 )
 WITH (
   OIDS=FALSE
@@ -152,9 +154,10 @@ CREATE TABLE public.usuarios
   tipo integer,
   "user" character varying(10),
   clave character varying(10),
+  idtipousuarios integer,
   CONSTRAINT "PKUSUSARIOS" PRIMARY KEY (idusuario),
   CONSTRAINT "FK5" FOREIGN KEY (tipo)
-      REFERENCES public.tipo_usuarios (idtipo_usuarios) MATCH SIMPLE
+    REFERENCES public.tipo_usuarios (idtipo_usuarios) MATCH SIMPLE
       ON UPDATE NO ACTION ON DELETE NO ACTION,
   CONSTRAINT "UNICO2" UNIQUE (idusuario)
 )
