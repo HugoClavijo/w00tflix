@@ -25,14 +25,6 @@ CREATE TABLE public.comentarios
   idusuario integer,
   idvideo integer,
   comentario character varying(140),
-  CONSTRAINT "PKCOMENTARIOS" PRIMARY KEY (idcomentarios),
-  CONSTRAINT "FK6" FOREIGN KEY (idusuario)
-      REFERENCES public.usuarios (idusuario) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION,
-  CONSTRAINT "FK7" FOREIGN KEY (idvideo)
-      REFERENCES public.video (idvideo) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION,
-  CONSTRAINT "UNICO3" UNIQUE (idcomentarios)
 )
 WITH (
   OIDS=FALSE
@@ -135,9 +127,6 @@ CREATE TABLE public.tipo_usuarios
   idtipo_usuarios integer NOT NULL,
   detalle character varying(50),
   CONSTRAINT "PKTIPOUSER" PRIMARY KEY (idtipo_usuarios)
-	 CONSTRAINT "FKTPIUSUARIO" FOREIGN KEY (idtipousuarios)
-      REFERENCES public.usuarios (idtipousuarios) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION,
 )
 WITH (
   OIDS=FALSE
@@ -156,9 +145,6 @@ CREATE TABLE public.usuarios
   clave character varying(10),
   idtipousuarios integer,
   CONSTRAINT "PKUSUSARIOS" PRIMARY KEY (idusuario),
-  CONSTRAINT "FK5" FOREIGN KEY (tipo)
-    REFERENCES public.tipo_usuarios (idtipo_usuarios) MATCH SIMPLE
-      ON UPDATE NO ACTION ON DELETE NO ACTION,
   CONSTRAINT "UNICO2" UNIQUE (idusuario)
 )
 WITH (
