@@ -17,17 +17,17 @@ class mensajes_recibidosCollector extends Collector{
     }
       
     
-  function createMensajesRecibidos($nombre, $descripcion) {
-    $rows = self::$db->insertRow("INSERT into categorias (nombre, descripcion) values ('$nombre', '$descripcion')", null);             
+  function createMensajesRecibidos($idusuario, $mensaje) {
+    $rows = self::$db->insertRow("INSERT into mensajes_recibidos (idusuario, mensaje) values ('$idusuario', '$mensaje')", null);             
   }
     
     
-  function deleteCategoriasVideos($idcategorias) {
-    $rows = self::$db->deleteRow("DELETE FROM categorias where idcategorias = $idcategorias", null);             
+  function deleteCategoriasVideos($mensajes_recibidos) {
+    $rows = self::$db->deleteRow("DELETE FROM mensajes_recibidos where idmensajes_recibidos = $idmensajes_recibidos", null);             
   }
     
-  function updateCategoriasVideos($idcategorias, $nombre, $descripcion) {
-    $rows = self::$db->updateRow("UPDATE  categorias SET nombre='$nombre', descripcion='$descripcion' WHERE idcategorias=$idcategorias", null);             
+  function updateCategoriasVideos($idmensajes_recibidos, $idusuario, $mensaje) {
+    $rows = self::$db->updateRow("UPDATE mensajes_recibidos SET idusuario='$idusuario', mensaje='$mensaje' WHERE idmensajes_recibidos=$idmensajes_recibidos", null);             
   }
         
 }
