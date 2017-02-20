@@ -13,9 +13,9 @@ $usersObj = new usuariosCollector();
 
 foreach ($usersObj->showUsuarios() as $c){
   echo "<div>";
-  echo $c->getIdUsuarios() . "  -- " .$c->getNombre(). "  -- " .$c->getCorreo(). "  -- " .$c->getTipo();
+  echo $c->getIdUsuarios() . "  -- " .$c->getNombre(). "  -- " .$c->getCorreo(). "  -- " .$c->getTipo(). "  -- " .$c->getUsuario(). "  -- " .$c->getPass();
   echo " ";
-  echo "<a href='update.php?idusuarios=".$c->getIdUsuarios()."&nombre="  .$c->getNombre()."&correo="  .$c->getCorreo()."&tipo="  .$c->getTipo(). "'>editar</a>";
+  echo "<a href='update.php?idusuarios=".$c->getIdUsuarios()."&nombre="  .$c->getNombre()."&correo="  .$c->getCorreo()."&tipo="  .$c->getTipo()."&usuario="  .$c->getUsuario()."&pass="  .$c->getPass(). "'>editar</a>";
   echo " ";
   echo "<a href='delete_usuarios.php?idusuarios=".$c->getIdUsuarios()."'>eliminar</a>";
      

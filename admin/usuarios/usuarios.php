@@ -5,12 +5,16 @@ class usuarios{
     private $nombre;
     private $correo;
     private $tipo;
+     private $usuario;
+      private $pass;
 
-    function __construct($idusuarios,$nombre, $correo, $tipo){
+    function __construct($idusuarios,$nombre, $correo, $tipo, $usuario, $pass){
         $this->idusuarios = $idusuarios;
         $this->nombre = $nombre;
         $this->correo = $correo;
-        $this->tipo = $tipo;        
+        $this->tipo = $tipo;    
+        $this->usuario = $usuario;
+        $this->pass = $pass;
     }
     
     
@@ -42,6 +46,20 @@ class usuarios{
        return $this->tipo;
      }     
     
+    function setUsuario($usuario){
+       $this->usuario = $usuario;
+     } 
+     function getUsuario(){
+       return $this->usuario;
+     }     
+     
+     function setPass($pass){
+       $this->pass = $pass;
+     } 
+     function getPass(){
+       return $this->pass;
+     }     
+     
 }
 
 ?>

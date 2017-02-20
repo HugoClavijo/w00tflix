@@ -5,6 +5,9 @@ $idusuarios =$_GET['idusuarios'];
 $nombre =$_GET['nombre'];
 $correo =$_GET['correo'];
 $tipo =$_GET['tipo'];
+$usuario =$_GET['usuario'];
+$pass =$_GET['pass'];
+
 echo $idusuarios." ".$nombre." ".$tipo." ";
 
 ?>
@@ -32,7 +35,16 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 		<label for="tipo">Tipo:</label><br>
 		<textarea id="tipo" class="input" name="tipo"  value="" rows="10" cols="40" ></textarea><br>
 	</div>
-    
+	
+	  <div class="row">
+		<label for="tipo">Usuario:</label><br>
+		<textarea id="usuario" class="input" name="usuario"  value="" rows="10" cols="40" ></textarea><br>
+	</div>
+
+      <div class="row">
+		<label for="tipo">Password:</label><br>
+		<textarea id="pass" class="input" name="pass"  value="" rows="10" cols="40" ></textarea><br>
+	</div>
 	
 	<input id="submit_button" type="submit" value="Enviar" />
 </form>

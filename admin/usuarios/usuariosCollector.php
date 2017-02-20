@@ -10,15 +10,15 @@ class usuariosCollector extends Collector{
         echo "Usuarios";
         $usuarios = array();
         foreach ($rows as $c){
-            $aux = new usuarios($c{'idusuarios'},$c{'nombre'},$c{'correo'},$c{'tipo'});
+            $aux = new usuarios($c{'idusuarios'},$c{'nombre'},$c{'correo'},$c{'tipo_usuario'},$c{'usuario'},$c{'pass'});
       array_push($usuarios, $aux);        
         }
         return  $usuarios; 
     }
     
     
-  function createUsuarios($nombre, $correo, $tipo) {
-    $rows = self::$db->insertRow("INSERT into usuarios (nombe, correo, tipo) values ('$nombre', '$correo', '$tipo')", null);             
+  function createUsuarios($nombre, $correo, $tipo, $usuario, $pass) {
+    $rows = self::$db->insertRow("INSERT into usuarios (nombe, correo, tipo) values ('$nombre', '$correo', '$tipo', '$usuario', '$pass')", null);             
   }
     
       
@@ -26,8 +26,8 @@ class usuariosCollector extends Collector{
     $rows = self::$db->deleteRow("DELETE FROM usuarios where idusuarios = $idusuarios", null);             
   }
     
-  function updateUsuarios($idusuarios, $nombre, $correo, $tipo) {
-    $rows = self::$db->updateRow("UPDATE  usuarios SET nombre='$nombre', correo='$correo', nombre='$tipo' WHERE idusuarios=$idusuarios", null);             
+  function updateUsuarios($idusuarios, $nombre, $correo, $tipo, $usuario, $pass) {
+    $rows = self::$db->updateRow("UPDATE  usuarios SET nombre='$nombre', correo='$correo', tipo_usuario='$tipo' , usuario='$usuario' , pass='$pass' WHERE idusuarios=$idusuarios", null);             
   }
    
     
