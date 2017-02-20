@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-$idcategorias =$_GET['idcategorias'];
+$idcategorias =$_GET['idcategoria'];
 $nombre =$_GET['nombre'];
 $descripcion =$_GET['descripcion'];
 echo $idcategorias." ".$nombre." ".$descripcion."";
@@ -12,8 +12,8 @@ echo $idcategorias." ".$nombre." ".$descripcion."";
 <form id="contact_form" action="update_categorias_videos.php" method="GET" enctype="multipart/form-data">
     
     <div class="row">
-		<label for="idcategorias">idcategoria:</label>
-		<input id="idcategoriass" class="input" name="idcategorias" type="text" readonly="readonly" value="<?php print $idcategorias; ?> " size="5" />
+		<label for="idcategoria">idcategoria:</label>
+		<input id="idcategoria" class="input" name="idcategoria" type="text" readonly="readonly" value="<?php print $idcategorias; ?> " size="5" />
 	</div><br>
     
     <div class="row">

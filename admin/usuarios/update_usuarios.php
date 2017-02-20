@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$iddetalles=$_GET['idusuarios'];
+$idusuarios=$_GET['idusuarios'];
 $nombre =$_GET['nombre'];
 $correo =$_GET['correo'];
 $tipo =$_GET['tipo'];
@@ -15,7 +15,7 @@ $CollectorObj = new usuariosCollector();
 $CollectorObj->updateUsuarios($idusuarios, $nombre, $correo, $tipo, $usuario, $pass);
 
 echo "Usuario: ";  
- echo " idusuario:".$idusuarios.", nombre: ".$nombre", correo: ".$correo", tipo: ".$tipo", usuario: ".$usuario", password: ".$pass;
+ echo " idusuario:".$idusuarios.", nombre: ".$nombre.", correo: ".$correo.", tipo: ".$tipo.", usuario: ".$usuario.", password: ".$pass;
      
 echo "<br><a href='read_usuarios.php'>Regresar</a>";     
 ?>

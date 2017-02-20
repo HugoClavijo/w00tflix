@@ -7,7 +7,7 @@ $descripcion =$_GET['descripcion'];
 include_once('../dataBase.php');
 
 include_once("categorias_videosCollector.php");
-$cateVideosCollectorObj = new detalle_videosCollector();
+$cateVideosCollectorObj = new categorias_videosCollector();
 $cateVideosCollectorObj->createCategoriasVideos($nombre, $descripcion);
 echo "Categoria Creada<br><br>";
 echo 'nombre: '.$nombre;  

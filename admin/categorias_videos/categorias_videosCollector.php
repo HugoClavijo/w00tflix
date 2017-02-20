@@ -7,11 +7,11 @@ include_once('../Collector.php');
 class categorias_videosCollector extends Collector{
     
     function showCategoriasVideos(){
-        $rows = self::$db->getRows("SELECT * FROM categorias  order by idcategorias"); 
+        $rows = self::$db->getRows("SELECT * FROM categorias  order by idcategoria"); 
         echo "Categorias De Videos";
         $categorias_videos = array();
         foreach ($rows as $c){
-            $aux = new categorias_videos($c{'idcategorias'},$c{'nombre'},$c{'descripcion'});
+            $aux = new categorias_videos($c{'idcategoria'},$c{'nombre'},$c{'descripcion'});
       array_push($categorias_videos, $aux);        
         }
         return  $categorias_videos; 
@@ -24,11 +24,11 @@ class categorias_videosCollector extends Collector{
     
     
   function deleteCategoriasVideos($idcategorias) {
-    $rows = self::$db->deleteRow("DELETE FROM categorias where idcategorias = $idcategorias", null);             
+    $rows = self::$db->deleteRow("DELETE FROM categorias where idcategoria = $idcategorias", null);             
   }
     
   function updateCategoriasVideos($idcategorias, $nombre, $descripcion) {
-    $rows = self::$db->updateRow("UPDATE  categorias SET nombre='$nombre', descripcion='$descripcion' WHERE idcategorias=$idcategorias", null);             
+    $rows = self::$db->updateRow("UPDATE  categorias SET nombre='$nombre', descripcion='$descripcion' WHERE idcategoria=$idcategorias", null);             
   }
         
 }

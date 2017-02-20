@@ -1,6 +1,6 @@
 <?php
 session_start();
-$idcategorias =$_GET['idcategorias'];
+$idcategorias =$_GET['idcategoria'];
 
 include_once('../dataBase.php');
 

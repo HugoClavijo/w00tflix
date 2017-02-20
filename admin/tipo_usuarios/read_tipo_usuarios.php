@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("detalle_videosCollector.php");
+include_once("tipo_usuariosCollector.php");
 
 $id =1;
 

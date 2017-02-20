@@ -1,6 +1,6 @@
 <?php
 session_start();
-$idtipo_ususarios =$_GET['idtipo_ususarios'];
+$idtipo_usuarios =$_GET['idtipo_usuarios'];
 
 include_once('../dataBase.php');
 

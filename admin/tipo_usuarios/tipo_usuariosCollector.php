@@ -10,7 +10,7 @@ class tipo_usuariosCollector extends Collector{
         echo "Tipos De Usuarios";
         $tipo_usuarios = array();
         foreach ($rows as $c){
-            $aux = new tipo_usuarios($c{'idtipo_usuarios'},$c{'id_usuario'},$c{'detalle'});
+            $aux = new tipo_usuarios($c{'idtipo_usuarios'},$c{'detalle'});
       array_push($tipo_usuarios, $aux);        
         }
         return  $tipo_usuarios; 

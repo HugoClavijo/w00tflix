@@ -18,7 +18,7 @@ class usuariosCollector extends Collector{
     
     
   function createUsuarios($nombre, $correo, $tipo, $usuario, $pass) {
-    $rows = self::$db->insertRow("INSERT into usuarios (nombe, correo, tipo) values ('$nombre', '$correo', '$tipo', '$usuario', '$pass')", null);             
+    $rows = self::$db->insertRow("INSERT into usuarios (nombre, correo, tipo_usuario,usuario,pass) values ('$nombre', '$correo', '$tipo', '$usuario', '$pass')", null);             
   }
     
       

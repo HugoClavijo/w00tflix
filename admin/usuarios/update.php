@@ -14,7 +14,7 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 
 <p>Actualizando Usuario:</p>
 
-<form id="contact_form" action="update_detalle_videos.php" method="GET" enctype="multipart/form-data">
+<form id="contact_form" action="update_usuarios.php" method="GET" enctype="multipart/form-data">
     
     <div class="row">
 		<label for="idusuarios">idusuarios:</label>

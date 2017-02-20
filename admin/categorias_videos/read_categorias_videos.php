@@ -16,9 +16,9 @@ foreach ($cateObj->showCategoriasVideos() as $c){
   echo "<div>";
   echo $c->getIdCategorias() . "  -- " .$c->getDescripcion(). "  -- " .$c->getNombre();
   echo " ";
-  echo "<a href='update.php?iddetalles=".$c->getIdCategorias()."&nombre="  .$c->getNombre()."&descripcion="  .$c->getDescripcion(). "'>editar</a>";
+  echo "<a href='update.php?idcategoria=".$c->getIdCategorias()."&nombre="  .$c->getNombre()."&descripcion="  .$c->getDescripcion(). "'>editar</a>";
   echo " ";
-  echo "<a href='delete_categorias_Videos.php?idcategorias=".$c->getIdCategorias()."'>eliminar</a>";
+  echo "<a href='delete_categorias_videos.php?idcategoria=".$c->getIdCategorias()."'>eliminar</a>";
      
  echo "</div>"; 
 }
