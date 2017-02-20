@@ -39,7 +39,7 @@ header('Location: index2.php');
                <li><a href="index.php">Home</a></li>
                <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contáctenos</a></li>
-               <li><a href="pages/login/login.php">Login</a></li>
+               <li><a href="pages/log-in/login.php">Login</a></li>
             </ul>
          </nav>
     
@@ -50,7 +50,7 @@ header('Location: index2.php');
                      <h1>W00tflix</h1>
                      <p>Tu mejor alternativa en entretenimiento e interaccion.</p>
                   </header>
-                  <a href="pages/login/login.php" class="button big alt scrolly">Comenzar</a>
+                  <a href="pages/log-in/login.php" class="button big alt scrolly">Comenzar</a>
                   <!--a href="#main" class="button big alt scrolly">Ver mas</a-->
                </div>
 
