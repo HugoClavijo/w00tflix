@@ -8,49 +8,9 @@ $tipo =$_GET['tipo'];
 $usuario =$_GET['usuario'];
 $pass =$_GET['pass'];
 
-echo $idusuarios." ".$nombre." ".$tipo." ";
+
 
 ?>
-
-<p>Actualizando Usuario:</p>
-
-<form id="contact_form" action="update_usuarios.php" method="GET" enctype="multipart/form-data">
-    
-    <div class="row">
-		<label for="idusuarios">idusuarios:</label>
-		<input id="idusuarios" class="input" name="idusuarios" type="text" readonly="readonly" value="<?php print $idusuarios; ?> " size="5" />
-	</div><br>
-    
-	<div class="row">
-		<label for="descripcion">Nombre:</label><br>
-		<textarea id="nombre" class="input" name="nombre"  value="" rows="10" cols="40" ></textarea><br>
-	</div>
-	
-    <div class="row">
-		<label for="correo">Correo:</label><br>
-		<textarea id="correo" class="input" name="correo"  value="" rows="10" cols="40" ></textarea><br>
-	</div>
-    
-    <div class="row">
-		<label for="tipo">Tipo:</label><br>
-		<textarea id="tipo" class="input" name="tipo"  value="" rows="10" cols="40" ></textarea><br>
-	</div>
-	
-	  <div class="row">
-		<label for="tipo">Usuario:</label><br>
-		<textarea id="usuario" class="input" name="usuario"  value="" rows="10" cols="40" ></textarea><br>
-	</div>
-
-      <div class="row">
-		<label for="tipo">Password:</label><br>
-		<textarea id="pass" class="input" name="pass"  value="" rows="10" cols="40" ></textarea><br>
-	</div>
-	
-	<input id="submit_button" type="submit" value="Enviar" />
-</form>
-
-
-
 
 
 <!DOCTYPE html>
@@ -89,27 +49,26 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 	           <div class="col-md-12">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1> <a href="#">Usuarios</a></h1>
+	                 <h1> <a href="#"> Usuarios </a></h1>
+                      <h2><a href="#">Regresar</a></h2>
 	              </div>
 	           </div>
 	        </div>
 	     </div>
-	</div>
+</div>
 
 
 <div class="row">
 <div class="content-box-large">
 <div class="panel-heading">
 <div class="panel-body">
- <form class="form-horizontal" role="form">
-
-
+ <form class="form-horizontal" action="update_usuarios.php" method="GET"  role="form" enctype="multipart/form-data">
 
 
 								  <div class="form-group">
-								    <label class="col-sm-2 control-label">Id usuario</label>
+								    <label class="col-sm-2 control-label" for="idusuarios">Id usuario</label>
 								    <div class="col-sm-10 col-md-2">
-								      <span class="form-control">Aqui va el número</span>
+								      <input class="form-control" id="idusuarios" readonly=""  name="idusuarios" type="text" value="<?php print $idusuarios; ?>">
 								    </div>
 								  </div>
 
@@ -117,31 +76,31 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 
 
 								  <div class="form-group">
-								    <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
-								    <div class="col-sm-10">
-								      <input type="email" class="form-control" id="inputEmail3" placeholder="Ej. Jose Eduardo Perez">
+								    <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Ej. Jose Eduardo Perez" value="<?php print $nombre; ?>">
 								    </div>
 								  </div>
 
 
 								  <div class="form-group">
-								    <label for="inputEmail3" class="col-sm-2 control-label">Correo</label>
-								    <div class="col-sm-10">
-								      <input type="email" class="form-control" id="inputEmail3" placeholder="tucorreo@hotmail.com">
+								    <label for="correo" class="col-sm-2 control-label">Correo</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="correo"  name="correo" placeholder="tucorreo@hotmail.com" value="<?php print $correo; ?>">
 								    </div>
 								  </div>
 
 								  <div class="form-group">
-								    <label for="inputEmail3" class="col-sm-2 control-label">Tipo Usuario</label>
-								    <div class="col-sm-10">
-								      <input type="email" class="form-control" id="inputEmail3" placeholder="admin(1), usuario (2)">
+								    <label for="tipo" class="col-sm-2 control-label">Tipo Usuario</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="tipo"  name="tipo" placeholder="admin(1), usuario (2)" value="<?php print $tipo; ?>">
 								    </div>
 								  </div>
 
 								  <div class="form-group">
-								    <label for="inputEmail3" class="col-sm-2 control-label">Usuario</label>
-								    <div class="col-sm-10">
-								      <input type="email" class="form-control" id="inputEmail3" placeholder="Escribe un nombre corto">
+								    <label for="usuario" class="col-sm-2 control-label">Usuario</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="usuario"  name="usuario"  placeholder="Escribe un nombre corto" value="<?php print $usuario; ?>">
 								    </div>
 								  </div>
 
@@ -151,9 +110,9 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 
 
 								  <div class="form-group">
-								    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-								    <div class="col-sm-10">
-								      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+								    <label for="pass" class="col-sm-2 control-label">Password</label>
+								    <div class="col-sm-9">
+								      <input type="password" class="form-control" id="pass"  name="pass" placeholder="Password" value="<?php print $pass; ?>">
 								    </div>
 								  </div>
 
@@ -193,6 +152,8 @@ echo $idusuarios." ".$nombre." ".$tipo." ";
 								  <div class="form-group">
 								    <div class="col-sm-offset-2 col-sm-10">
 								      <button type="submit" class="btn btn-primary">Sign in</button>
+                                        	 
+
 								    </div>
 								  </div>
 								</form>
