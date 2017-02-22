@@ -8,7 +8,7 @@ class mensajes_enviadosCollector extends Collector{
     
     function showMensajes_enviados(){
         $rows = self::$db->getRows("SELECT * FROM mensajes_enviados  order by idmensaje_enviado"); 
-        echo "Detalle de Mensajes:";
+      
         $mensajes_enviados = array();
         foreach ($rows as $c){
             $aux = new mensajes_enviados($c{'idmensaje_enviado'},$c{'idusuario'},$c{'mensaje'});

@@ -9,7 +9,7 @@ class usuarios_bloqueadosCollector extends Collector{
     
     function showUsuarios_bloqueados(){
         $rows = self::$db->getRows("SELECT * FROM usuarios_bloqueados  order by idusuario_bloqueado"); 
-        echo "Detalle de usuario bloqueado: ";
+       
         $usuarios_bloqueados = array();
         foreach ($rows as $c){
             $aux = new usuarios_bloqueados($c{'idusuario_bloqueado'},$c{'fecha_bloqueo'},$c{'idusuario'});      

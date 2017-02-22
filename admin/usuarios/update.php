@@ -50,7 +50,6 @@ $pass =$_GET['pass'];
 	              <!-- Logo -->
 	              <div class="logo">
 	                 <h1> <a href="#"> Usuarios </a></h1>
-                      <h2><a href="#">Regresar</a></h2>
 	              </div>
 	           </div>
 	        </div>
@@ -151,7 +150,8 @@ $pass =$_GET['pass'];
 
 								  <div class="form-group">
 								    <div class="col-sm-offset-2 col-sm-10">
-								      <button type="submit" class="btn btn-primary">Sign in</button>
+								      <button type="submit" class="btn btn-primary">Editar</button>
+<a class="btn btn-primary" href="read_usuarios.php">Regresar</a>
                                         	 
 
 								    </div>

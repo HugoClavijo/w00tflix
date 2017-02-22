@@ -7,7 +7,6 @@ class usuariosCollector extends Collector{
     
     function showUsuarios(){
         $rows = self::$db->getRows("SELECT * FROM usuarios  order by idusuarios"); 
-        echo "Usuarios";
         $usuarios = array();
         foreach ($rows as $c){
             $aux = new usuarios($c{'idusuarios'},$c{'nombre'},$c{'correo'},$c{'tipo_usuario'},$c{'usuario'},$c{'pass'});

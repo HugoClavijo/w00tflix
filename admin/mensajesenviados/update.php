@@ -53,8 +53,8 @@ $mensaje =$_GET['mensaje'];
 	           <div class="col-md-12">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1> <a href="#"> Usuarios </a></h1>
-                      <h2><a href="#">Regresar</a></h2>
+	                 <h1> <a href="#"> Mensajes enviados </a></h1>
+                      
 	              </div>
 	           </div>
 	        </div>
@@ -100,7 +100,8 @@ $mensaje =$_GET['mensaje'];
 
 								  <div class="form-group">
 								    <div class="col-sm-offset-2 col-sm-10">
-								      <button type="submit" class="btn btn-primary">Sign in</button>
+								          <button type="submit" class="btn btn-primary">Editar</button>
+<a class="btn btn-primary" href="read_mensajes_enviados.php">Regresar</a>
                                         	 
 
 								    </div>

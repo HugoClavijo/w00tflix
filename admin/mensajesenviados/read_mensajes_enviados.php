@@ -113,18 +113,20 @@ echo "<tr> ";
 	
 				            </table>
 		  		
+
 </div>
-<?php
-echo "<br><br>";
-echo " ";
-echo "<a href='create.php'>Crear</a>";
-
-?>
 
 
 
+    <div class="panel-body">
+<form class="form-horizontal" action="create.php" method="GET"  role="form" enctype="multipart/form-data">
+<button type="submit" class="btn btn-primary">Crear</button>
+<a class="btn btn-primary" href="../index.php">Regresar</a>
 
+</form>
 
+   
+</div>
 
 
  

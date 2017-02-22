@@ -8,7 +8,6 @@ class detalle_videosCollector extends Collector{
     
     function showDetalleVideos(){
         $rows = self::$db->getRows("SELECT * FROM detalle_videos  order by iddetalles"); 
-        echo "Detalle de Videos";
         $detalle_videos = array();
         foreach ($rows as $c){
             $aux = new detalle_videos($c{'iddetalles'},$c{'descripcion'});
