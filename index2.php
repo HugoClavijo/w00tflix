@@ -42,7 +42,7 @@ if (isset($_SESSION['carrera'])){
        
       <!-- Header -->
         <header id="header">
-            <h1><a href="index.php">W00tflix<span> ...</span></a></h1>
+            <h1><a href="index2.php">W00tflix<span> ...</span></a></h1>
             
              
 			<a href="#menu2">
@@ -67,7 +67,7 @@ if (isset($_SESSION['carrera'])){
 	       
           <nav id="menu">
             <ul class="links">
-               <li><a href="../index.php">Home</a></li>
+               <li><a href="index2.php">Home</a></li>
                <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contactenos</a></li>
               
