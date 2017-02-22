@@ -3,6 +3,17 @@ session_start();
 
 ?>
 
+<?php
+echo 'Bienvenido, ';
+if (isset($_SESSION['k_username'])) {
+ echo '<b>'.$_SESSION['k_username'].'</b>.';
+ echo '<p><a href="../pages/log-in/logout.php">Logout</a></p>';
+}else{
+ echo '<p><a href="login.php">Login</a></p>';
+ 
+}
+?>
+
 
 <!DOCTYPE html>
  
@@ -49,7 +60,7 @@ session_start();
 	                </div>
 	              </div>
 	           </div>
-	           <div class="col-md-2">
+	           <!--<div class="col-md-2">
 	              <div class="navbar navbar-inverse" role="banner">
 	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
 	                    <ul class="nav navbar-nav">
@@ -63,7 +74,7 @@ session_start();
 	                    </ul>
 	                  </nav>
 	              </div>
-	           </div>
+	           </div>-->
 	        </div>
 	     </div>
 	</div>
@@ -88,17 +99,7 @@ session_start();
                     <li><a href="usuariosbloqueados/read_usuarios_bloqueados.php"><i class="glyphicon glyphicon-ban-circle"></i> Usuarios Bloqueados</a></li>
                     <li><a href="mensajesenviados/read_mensajes_enviados.php"><i class="glyphicon glyphicon-send"></i> Mensajes Enviados</a></li>
                     <li><a href="detallevideos/read_detalle_videos.php"><i class="glyphicon glyphicon-film"></i> Detale Videos</a></li>
-                    <li class="submenu">
-                         <a href="#">
-                            <i class="glyphicon glyphicon-list"></i> Pages
-                            <span class="caret pull-right"></span>
-                         </a>
-                         <!-- Sub menu -->
-                         <ul>
-                            <li><a href="../pages/log-in/login.php">Login</a></li>
-                            <li><a href="../pages/log-in/signup.php">Signup</a></li>
-                        </ul>
-                    </li>
+                    
                 </ul>
              </div>
 		  </div>
