@@ -35,30 +35,29 @@ session_start();
 	     </div>
 	</div>
 
+
 	<div class="page-content container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">
-			                <h6>Sign In</h6>
-			                <div class="social">
-	                            <a class="face_login" href="#">
-	                                <span class="face_icon">
-	                                    <img src="images/facebook.png" alt="fb">
-	                                </span>
-	                                <span class="text">Sign in with Facebook</span>
-	                            </a>
+			                <h6>INGRESAR</h6>
+			                
 	                            <div class="division">
-	                                <hr class="left">
-	                                <span>o</span>
-	                                <hr class="right">
+	                                <hr>	                                
 	                            </div>
-	                        </div>
-			                <input class="form-control" type="text" placeholder="E-mail">
-			                <input class="form-control" type="password" placeholder="Contraseña">
-			                <div class="action">
-			                    <a class="btn btn-primary signup" href="index.php">Login</a>
+	                       
+
+<form action="verifica_usuario.php" method="post">
+<input class="form-control" type="text" name="usuario" placeholder="Ususario" size="20" maxlength="20" />
+<br />
+<input class="form-control" type="password" name="password" placeholder="contraseña" size="10" maxlength="10" />
+<br />
+<input class="btn btn-primary signup" type="submit" value="LOGIN" />
+</form>
+			               
+					
 			                </div>                
 			            </div>
 			        </div>
