@@ -18,11 +18,16 @@ if(trim($_POST["usuario"]) != "" && trim($_POST["password"]) != "")
  // o puedes convertir los a su entidad HTML aplicable con htmlentities
  $usuario = strtolower(htmlentities($_POST["usuario"], ENT_QUOTES));
  $password = $_POST["password"];
- $result = pg_query('SELECT pass, usuario FROM usuarios WHERE usuario=\''.$usuario.'\'');
+ $result = pg_query('SELECT pass, usuario, tipo_usuario FROM usuarios WHERE usuario=\''.$usuario.'\'');
  if($row = pg_fetch_array($result)){
   if($row["pass"] == $password){
    $_SESSION["k_username"] = $row['usuario'];
+ if($row["tipo_usuario"] == 1){
 	header("location: ../../admin/index.php");
+ }else{
+	header("location: ../../index2.php");
+ }
+	
 	
    //echo 'Has sido logueado correctamente '.$_SESSION['k_username'].' <p>';
    //echo '<a href="index.php">Index</a></p>';

@@ -1,18 +1,9 @@
-
 <?php
- session_start();
+session_start();
 
 ?>
 
-<?php
-if (isset($_SESSION['k_username'])) {
-echo 'Bienvenido, ';
-echo '<b>'.$_SESSION['k_username'].'</b>.';
-echo "<br><br>";
-}else{
-echo '<script>window.location.href = "pages/log-in/login.php";</script>';
-}
-?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -27,20 +18,9 @@ echo '<script>window.location.href = "pages/log-in/login.php";</script>';
    </head>
    <body>
 
-<?php
-$nombres = $_POST['nombres'];
-$apellidos = $_POST['apellidos'];
 
-
-//$_SESSION['carrera'] = $_POST['nombres'];
-
-
-//if (isset($_SESSION['carrera'])){    
-//echo 'Se ha creado sesión <br>';
-
-?>
             
-       
+      
        
        
        
@@ -74,7 +54,7 @@ $apellidos = $_POST['apellidos'];
                <li><a href="index2.php">Home</a></li>
                <li><a href="pages/quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="pages/contactenos/contacto.php">Contactenos</a></li>
-              
+              <li><a href="pages/log-in/logout.php">Salir (logout)</a></li>
             </ul>
          </nav>
      
@@ -91,8 +71,17 @@ $apellidos = $_POST['apellidos'];
             <section class="wrapper style1">
                <div class="inner">
                   <header class="align-center">
-                     <h2>Bienvenido...</h2>
+                     <h2>W00t!</h2>
                      
+			<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+echo '<b>'.$_SESSION['k_username'].'</b>.';
+echo "<br><br>";
+}else{
+echo '<script>window.location.href = "pages/log-in/login.php";</script>';
+}
+?>
 
                      <!--<form method="post" action="#">
                            <div class="row uniform">

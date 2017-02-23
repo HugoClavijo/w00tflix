@@ -19,6 +19,7 @@ $CollectorObj->updateUsuarios_bloqueados($idusuario_bloqueado,$fecha_bloqueo,$id
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
+echo '<p><a href="../../pages/log-in/logout.php">Logout</a></p>';
 echo "<br><br>";
 }else{
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
