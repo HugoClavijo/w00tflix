@@ -97,7 +97,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 								    <div class="col-sm-offset-2 col-sm-10">
 								      <button type="submit" class="btn btn-primary">Enviar</button>
 
-<a class="btn btn-primary" href="read_usuarios_bloqueados.php">Regresar</a>
+<a class="btn btn-primary" href="read_detalle_videos.php">Regresar</a>
 
                                         	 
 
