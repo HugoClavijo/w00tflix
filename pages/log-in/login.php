@@ -50,9 +50,9 @@ session_start();
 	                       
 
 <form action="verifica_usuario.php" method="post">
-<input class="form-control" type="text" name="usuario" placeholder="Ususario" size="20" maxlength="20" />
+<input class="form-control" type="text" name="usuario" placeholder="Usuario" size="20" maxlength="20" />
 <br />
-<input class="form-control" type="password" name="password" placeholder="contraseña" size="10" maxlength="10" />
+<input class="form-control" type="password" name="password" placeholder="Contraseña" size="10" maxlength="10" />
 <br />
 <input class="btn btn-primary signup" type="submit" value="LOGIN" />
 </form>
