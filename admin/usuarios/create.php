@@ -2,13 +2,23 @@
   session_start();
 ?>
 
+<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+echo '<b>'.$_SESSION['k_username'].'</b>.';
+echo "<br><br>";
+}else{
+echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
+}
+?>
+
 
 <!DOCTYPE html>
  
 <html lang="es">
  
 <head>
-<title>Titulo de la web</title>
+<title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
 <link rel="shortcut icon" href="/favicon.ico" />
