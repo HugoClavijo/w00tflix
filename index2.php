@@ -4,7 +4,15 @@
 
 ?>
 
-
+<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+echo '<b>'.$_SESSION['k_username'].'</b>.';
+echo "<br><br>";
+}else{
+echo '<script>window.location.href = "pages/log-in/login.php";</script>';
+}
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -24,15 +32,11 @@ $nombres = $_POST['nombres'];
 $apellidos = $_POST['apellidos'];
 
 
+//$_SESSION['carrera'] = $_POST['nombres'];
 
-$_SESSION['carrera'] = $_POST['nombres'];
 
-
-if (isset($_SESSION['carrera'])){    
+//if (isset($_SESSION['carrera'])){    
 //echo 'Se ha creado sesión <br>';
-
-
-
 
 ?>
             
@@ -433,8 +437,8 @@ if (isset($_SESSION['carrera'])){
 
 
 <?php
-}else{
+//}else{
 //header('Location: pages/login/login.php');
-    header('Location: index.php');
-}
+    //header('Location: index.php');
+//}
 ?>
