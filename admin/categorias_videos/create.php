@@ -2,18 +2,139 @@
   session_start();
 ?>
 
-<p>Nueva Categoria:</p>
-<form id="contact_form" action="create_categorias_videos.php" method="GET" enctype="multipart/form-data">
-    
-    <div class="row">
-		<label for="nombre">Nombre:</label><br />
-		<textarea id="nombre" class="input" name="nombre"  value="" rows="10" cols="40" ></textarea><br />
-	</div>
-    
-	<div class="row">
-		<label for="descripcion">Descripcion:</label><br />
-		<textarea id="descripcion" class="input" name="descripcion"  value="" rows="10" cols="40" ></textarea><br/>
-	</div>
-	
-	<input id="submit_button" type="submit" value="Enviar" />
-</form>
+
+
+
+
+
+
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../../estilos.css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" />
+
+
+   <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="../../assets/css/styles.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="../../assets/vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="../../assets/vendors/select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="../../assets/vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
+
+    <link href="../../assets/css/forms.css" rel="stylesheet">
+</head>
+ 
+<body>
+
+<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-12">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1> <a href="#"> Usuarios </a></h1>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+</div>
+
+
+<div class="row">
+<div class="content-box-large">
+<div class="panel-heading">
+<div class="panel-body">
+ <form class="form-horizontal" action="create_categorias_videos.php" method="GET"  role="form" enctype="multipart/form-data">
+
+
+								 
+
+
+
+
+								  <div class="form-group">
+								    <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Ej. arte, danza" >
+								    </div>
+								  </div>
+
+
+								  <div class="form-group">
+								    <label for="descripcion" class="col-sm-2 control-label">Descripción</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="descripcion"  name="descripcion" placeholder="Ingresa un detalle " >
+								    </div>
+								  </div>
+
+
+
+
+
+
+			                                         <div class="form-group">
+								    <div class="col-sm-offset-2 col-sm-10">
+								      <button type="submit" class="btn btn-primary">Enviar</button>
+
+<a class="btn btn-primary" href="read_categorias_videos.php">Regresar</a>
+
+                                        	 
+
+								    </div>
+								  </div>
+								</form>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../../assets/vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+
+    <script src="../../assets/vendors/select/bootstrap-select.min.js"></script>
+
+    <script src="../../assets/vendors/tags/js/bootstrap-tags.min.js"></script>
+
+    <script src="../../assets/vendors/mask/jquery.maskedinput.min.js"></script>
+
+    <script src="../../assets/vendors/moment/moment.min.js"></script>
+
+    <script src="../../assets/vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+
+     <!-- bootstrap-datetimepicker -->
+     <link href="../../assets/vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+     <script src="../../assets/vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script> 
+
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+
+    <script src="../../assets/js/custom.js"></script>
+    <script src="../../assets/js/forms.js"></script>
+
+
+</body>
+</html>
+

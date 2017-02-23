@@ -7,7 +7,7 @@ class tipo_usuariosCollector extends Collector{
     
     function showTipoUsuarios(){
         $rows = self::$db->getRows("SELECT * FROM tipo_usuarios  order by idtipo_usuarios"); 
-        echo "Tipos De Usuarios";
+       
         $tipo_usuarios = array();
         foreach ($rows as $c){
             $aux = new tipo_usuarios($c{'idtipo_usuarios'},$c{'detalle'});

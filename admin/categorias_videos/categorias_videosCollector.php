@@ -8,7 +8,7 @@ class categorias_videosCollector extends Collector{
     
     function showCategoriasVideos(){
         $rows = self::$db->getRows("SELECT * FROM categorias  order by idcategoria"); 
-        echo "Categorias De Videos";
+    
         $categorias_videos = array();
         foreach ($rows as $c){
             $aux = new categorias_videos($c{'idcategoria'},$c{'nombre'},$c{'descripcion'});
