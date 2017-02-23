@@ -1,12 +1,22 @@
 <?php
- session_start();
+session_start();
 
+?>
+
+<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+ echo '<b>'.$_SESSION['k_username'].'</b>';
+ echo '<p><a href="../log-in/logout.php">Logout</a></p>';
+}else{
+echo ' ';
+}
 ?>
 
 <!DOCTYPE HTML>
 
 <html>
-   <head>- 
+   <head> 
       <title>  W00tflix - Contactos</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,17 +26,29 @@
 
       <!-- Header -->
          <header id="header">
-            <h1><a href="../../index.php">W00tflix - Contáctenos<span></span></a></h1>
+            <h1><a href="#">W00tflix - Contáctenos<span></span></a></h1>
             <a href="#menu">Menu</a>
          </header>
 
       <!-- Nav -->
          <nav id="menu">
             <ul class="links">
-               <li><a href="../../index.php">Home</a></li>
+               <?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../../index2.php">Home</a></li>'; 
+	}else{
+	echo '<li><a href="../../index.php">Home</a></li>'; 
+	}
+	?>
                <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="../contactenos/contacto.php">Contactenos</a></li>
-               <li><a href="../login/login.php">Login</a></li>
+              <?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../log-in/logout.php">Logout</a></li>'; 
+	}else{
+	echo '<li><a href="../log-in/login.php">Login</a></li>'; 
+	}
+	?>
             </ul>
          </nav>
             
@@ -39,7 +61,7 @@
                   <header class="align-center">
                      <h2>Contactos</h2>
                   </header>
-                    <form action="/" method="post" >
+                    <form action="#" method="post" >
                         
                         <label>Nombre: </label>
                         <input type="text" autocomplete="on">
@@ -56,7 +78,7 @@
 
 
          <!-- Three -->
-            -
+            
 
          </div>
 

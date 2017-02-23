@@ -1,12 +1,23 @@
-<?php 
-			
-	echo "codigo php";
+<?php
+session_start();
+
 ?>
+
+<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+ echo '<b>'.$_SESSION['k_username'].'</b>';
+ echo '<p><a href="../log-in/logout.php">Logout</a></p>';
+}else{
+echo ' ';
+}
+?>
+
 
 <!DOCTYPE HTML>
 
 <html>
-   <head>- 
+   <head> 
       <title>  W00tflix - Quiénes Somos</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,10 +34,23 @@
       <!-- Nav -->
          <nav id="menu">
             <ul class="links">
-               <li><a href="../../index.php">Home</a></li>
+	<?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../../index2.php">Home</a></li>'; 
+	}else{
+	echo '<li><a href="../../index.php">Home</a></li>'; 
+	}
+	?>
                <li><a href="../quienes_somos/quienes_somos.php">Acerca de</a></li>
-               <li><a href="../contactenos/contacto.php">Contáctenos</a></li>
-               <li><a href="../login/login.php">Login</a></li>
+               <li><a href="../contactenos/contacto.php">Contáctenos</a></li>              
+	<?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../log-in/logout.php">Logout</a></li>'; 
+	}else{
+	echo '<li><a href="../log-in/login.php">Login</a></li>'; 
+	}
+	?>
+
             </ul>
          </nav>
             
@@ -187,58 +211,7 @@
          <!-- Two -->
          
 
-         <!-- Three -->
-            <section class="wrapper ">
-               <div class="inner">
-                  <header class="align-center">
-                     <h2>Los mas vistos</h2>
-                     <p>Te mostramos a los 3 artistas mas vistos en la ultima semana.</p>
-                  </header>
-
-                  <!-- 3 Column Video Section -->
-                     <div class="flex flex-3">
-                        <div class="video col">
-                           <div class="image fit">
-                              <img src="../../images/pic09.jpg" alt="" />
-                              <div class="arrow">
-                                 <div class="icon fa-play"></div>
-                              </div>
-                           </div>
-                           <p class="caption">
-                              El Evento mas seguido 
-                           </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
-                        </div>
-                        <div class="video col">
-                           <div class="image fit">
-                              <img src="../../images/pic10.jpg" alt="" />
-                              <div class="arrow">
-                                 <div class="icon fa-play"></div>
-                              </div>
-                           </div>
-                           <p class="caption">
-                              lo mejor en musica nacional
-                           </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
-                        </div>
-                        <div class="video col">
-                           <div class="image fit">
-                              <img src="../../images/pic11.jpg" alt="" />
-                              <div class="arrow">
-                                 <div class="icon fa-play"></d Pliv>
-                              </div>
-                           </div>
-                           <p class="caption">
-                              Arte Plastico
-                           </p>
-                           <a href="generic.html" class="link"><span>Click Me</span></a>
-                        </div>
-                     </div>
-               </div>            </section>
-
-         </div>
-          
-
+         
       <!-- Footer -->
          <footer id="footer">
             <div class="inner">

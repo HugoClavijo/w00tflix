@@ -1,6 +1,17 @@
-      <?php
-echo "This is PHP code";
-   ?>
+<?php
+session_start();
+
+?>
+
+<?php
+if (isset($_SESSION['k_username'])) {
+echo 'Bienvenido, ';
+ echo '<b>'.$_SESSION['k_username'].'</b>';
+ echo '<p><a href="log-in/logout.php">Logout</a></p>';
+}else{
+echo ' ';
+}
+?>
 
 <!DOCTYPE HTML>
 
@@ -22,10 +33,22 @@ echo "This is PHP code";
 		<!-- Nav -->
 			 <nav id="menu">
             <ul class="links">
-               <li><a href="../index2.php">Home</a></li>
+               <?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../../index2.php">Home</a></li>'; 
+	}else{
+	echo '<li><a href="../../index.php">Home</a></li>'; 
+	}
+	?>
                <li><a href="quienes_somos/quienes_somos.php">Acerca de</a></li>
                <li><a href="contactenos/contacto.php">Contactenos</a></li>
-               <li><a href="login/index.php">Login</a></li>
+               <?php
+	if (isset($_SESSION['k_username'])) {
+	echo '<li><a href="../log-in/logout.php">Logout</a></li>'; 
+	}else{
+	echo '<li><a href="../log-in/login.php">Login</a></li>'; 
+	}
+	?>
             </ul>
          </nav>
 
