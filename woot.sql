@@ -26,7 +26,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.categorias
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
   
 -- Table: public.comentarios
 
@@ -51,7 +51,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.comentarios
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.detalle_videos
 
@@ -68,7 +68,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.detalle_videos
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxyms;
 
 -- Table: public.historial
 
@@ -94,7 +94,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.historial
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.lista_favoritos
 
@@ -118,7 +118,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.lista_favoritos
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.mensajes_enviados
 
@@ -140,7 +140,7 @@ WITH (
 );
 ALTER TABLE public.mensaj
 es_enviados
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.mensajes_recibidos
 
@@ -161,7 +161,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.mensajes_recibidos
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.tipo_usuarios
 
@@ -182,7 +182,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.tipo_usuarios
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.usuario
 
@@ -203,7 +203,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.usuario
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.usuarios_bloqueados
 
@@ -224,7 +224,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.usuarios_bloqueados
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.video
 
@@ -257,7 +257,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.video
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Table: public.video_ranking
 
@@ -275,7 +275,7 @@ WITH (
   OIDS=FALSE
 );
 ALTER TABLE public.video_ranking
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 
 -- Sequence: public.categorias_idcategorias_seq
@@ -289,7 +289,7 @@ CREATE SEQUENCE public.categorias_idcategorias_seq
   START 1
   CACHE 1;
 ALTER TABLE public.categorias_idcategorias_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.comentarios_idcomentarios_seq
 
@@ -302,7 +302,7 @@ CREATE SEQUENCE public.comentarios_idcomentarios_seq
   START 1
   CACHE 1;
 ALTER TABLE public.comentarios_idcomentarios_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.detalle_videos_iddetalle_seq
 
@@ -315,7 +315,7 @@ CREATE SEQUENCE public.detalle_videos_iddetalle_seq
   START 1
   CACHE 1;
 ALTER TABLE public.detalle_videos_iddetalle_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.historial_idhistorial_seq
 
@@ -328,7 +328,7 @@ CREATE SEQUENCE public.historial_idhistorial_seq
   START 1
   CACHE 1;
 ALTER TABLE public.historial_idhistorial_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.lista_favoritos_idlista_favoritos_seq
 
@@ -348,7 +348,7 @@ CREATE SEQUENCE public.mensajes_enviados_idmensajes_enviados_seq
   START 1
   CACHE 1;
 ALTER TABLE public.mensajes_enviados_idmensajes_enviados_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.mensajes_recibidos_idmensajes_recibidos_seq
 
@@ -361,12 +361,12 @@ CREATE SEQUENCE public.mensajes_recibidos_idmensajes_recibidos_seq
   START 1
   CACHE 1;
 ALTER TABLE public.mensajes_recibidos_idmensajes_recibidos_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
   START 1
   CACHE 1;
 ALTER TABLE public.lista_favoritos_idlista_favoritos_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.mensajes_enviados_idmensajes_enviados_seq
 
@@ -379,7 +379,7 @@ CREATE SEQUENCE public.mensajes_enviados_idmensajes_enviados_seq
   START 1
   CACHE 1;
 ALTER TABLE public.mensajes_enviados_idmensajes_enviados_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.mensajes_recibidos_idmensajes_recibidos_seq
 
@@ -392,7 +392,7 @@ CREATE SEQUENCE public.mensajes_recibidos_idmensajes_recibidos_seq
   START 1
   CACHE 1;
 ALTER TABLE public.mensajes_recibidos_idmensajes_recibidos_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.tipo_usuarios_idtipousuario_seq
 
@@ -405,7 +405,7 @@ CREATE SEQUENCE public.tipo_usuarios_idtipousuario_seq
   START 1
   CACHE 1;
 ALTER TABLE public.tipo_usuarios_idtipousuario_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.usuario_idusuario_seq
 
@@ -418,7 +418,7 @@ CREATE SEQUENCE public.usuario_idusuario_seq
   START 1
   CACHE 1;
 ALTER TABLE public.usuario_idusuario_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.usuarios_bloqueados_idusuariobloqueado_seq
 
@@ -431,7 +431,7 @@ CREATE SEQUENCE public.usuarios_bloqueados_idusuariobloqueado_seq
   START 1
   CACHE 1;
 ALTER TABLE public.usuarios_bloqueados_idusuariobloqueado_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.video_idvideo_seq
 
@@ -444,7 +444,7 @@ CREATE SEQUENCE public.video_idvideo_seq
   START 1
   CACHE 1;
 ALTER TABLE public.video_idvideo_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
 
 -- Sequence: public.video_ranking_idvideoranking_seq
 
@@ -457,4 +457,4 @@ CREATE SEQUENCE public.video_ranking_idvideoranking_seq
   START 1
   CACHE 1;
 ALTER TABLE public.video_ranking_idvideoranking_seq
-  OWNER TO postgres;
+  OWNER TO joxdnzutsohxym;
