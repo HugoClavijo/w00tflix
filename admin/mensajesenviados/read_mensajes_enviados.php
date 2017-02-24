@@ -24,7 +24,14 @@ $mensajesObj = new mensajes_enviadosCollector();
 
 ?>
 
-<?php
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
@@ -34,14 +41,6 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
-
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -129,7 +128,7 @@ echo "<tr> ";
 
 
     <div class="panel-body">
-<form class="form-horizontal" action="create.php" method="GET"  role="form" enctype="multipart/form-data">
+<form class="form-horizontal" action="create.php" method="GET"   enctype="multipart/form-data">
 <button type="submit" class="btn btn-primary">Crear</button>
 <a class="btn btn-primary" href="../index.php">Regresar</a>
 

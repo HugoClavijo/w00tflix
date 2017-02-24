@@ -3,7 +3,13 @@ session_start();
 
 ?>
 
-<?php
+
+
+
+<!DOCTYPE HTML>
+<html>
+   <head> 
+   <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
  echo '<b>'.$_SESSION['k_username'].'</b>';
@@ -12,12 +18,7 @@ echo 'Bienvenido, ';
 echo ' ';
 }
 ?>
-
-
-<!DOCTYPE HTML>
-
-<html>
-   <head> 
+   
       <title>  W00tflix - Quiénes Somos</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />

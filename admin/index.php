@@ -1,7 +1,12 @@
 <?php
 session_start();
-
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>admin</title>
+<meta charset="utf-8" />
+
 
 <?php
 if (isset($_SESSION['k_username'])) {
@@ -15,13 +20,8 @@ echo '<script>window.location.href = "../pages/log-in/login.php";</script>';
 ?>
 
 
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
-<title>admin</title>
-<meta charset="utf-8" />
+
+
 <link rel="stylesheet" href="../../estilos.css" />
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="alternate" title="Pozolería RSS" type="application/rss+xml" href="/feed.rss" />
@@ -60,24 +60,9 @@ echo '<script>window.location.href = "../pages/log-in/login.php";</script>';
 	                </div>
 	              </div>
 	           </div>
-	           <!--<div class="col-md-2">
-	              <div class="navbar navbar-inverse" role="banner">
-	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-	                    <ul class="nav navbar-nav">
-	                      <li class="dropdown">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mi cuenta<b class="caret"></b></a>
-	                        <ul class="dropdown-menu animated fadeInUp">
-	                          <li><a href="profile.html">Profile</a></li>
-	                          <li><a href="../pages/log-in/login.php">Logout</a></li>
-	                        </ul>
-	                      </li>
-	                    </ul>
-	                  </nav>
-	              </div>
-	           </div>-->
 	        </div>
 	     </div>
-	</div>
+</div>
 
 
 
@@ -103,7 +88,8 @@ echo '<script>window.location.href = "../pages/log-in/login.php";</script>';
                 </ul>
              </div>
 		  </div>
-
+		</div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>

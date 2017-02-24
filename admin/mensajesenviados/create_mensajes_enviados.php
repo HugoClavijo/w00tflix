@@ -16,7 +16,16 @@ $mensajes_enviadosCollectorObj->createMensajes_enviados($idUsuario,$mensaje);
 
 ?>
 
-<?php
+
+
+
+
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+ <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
@@ -26,14 +35,6 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
-
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -78,7 +79,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 
 <br><br>
 
-<center><p> **Registrado con éxito** </p></center>
+<p> **Registrado con éxito** </p>
 
 <br><br><br> 
 
@@ -115,15 +116,7 @@ echo "<tr> ";
 </div>
                                         	 
 
-								    </div>
-								  </div>
-								</form>
-
-
-</div>
-</div>
-</div>
-</div>
+								    
 
 
 

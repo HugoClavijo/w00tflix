@@ -12,6 +12,12 @@ $mensajeCollectorObj->deleteMensajes_enviados($idMensaje_enviado);
 //header("Location: read_demo.php");
 ?>
 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
 <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
@@ -22,13 +28,6 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -66,7 +65,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 
 <br><br>
 
-<center><p> **Se ha borrado con éxito** </p></center>
+<p> **Se ha borrado con éxito** </p>
 
 <br><br><br> 
 
@@ -81,23 +80,15 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 <br><br><br>
 		     
    
-<center>
+
 <a class="btn btn-primary" href="read_mensajes_enviados.php">Regresar</a>
 
-</center>
+
    
 </div>
                                         	 
 
-								    </div>
-								  </div>
-								</form>
-
-
-</div>
-</div>
-</div>
-</div>
+							
 
 
 

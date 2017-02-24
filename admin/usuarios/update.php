@@ -11,6 +11,13 @@ $pass =$_GET['pass'];
 
 ?>
 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+
 <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
@@ -20,14 +27,8 @@ echo "<br><br>";
 }else{
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
-?>
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
+?>	
+	
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -71,7 +72,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 <div class="content-box-large">
 <div class="panel-heading">
 <div class="panel-body">
- <form class="form-horizontal" action="update_usuarios.php" method="GET"  role="form" enctype="multipart/form-data">
+ <form class="form-horizontal" action="update_usuarios.php" method="GET" enctype="multipart/form-data">
 
 
 								  <div class="form-group">

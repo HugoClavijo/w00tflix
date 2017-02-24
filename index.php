@@ -29,7 +29,7 @@ header('Location: index2.php');
        
       <!-- Header -->
          <header id="header">
-            <h1><a href="#">W00tflix<span></span></a></h1>
+            <h1><a href="index.php">W00tflix<span> ...</span></a></h1>
             <a href="#menu">Menu</a> 
          </header>
 
@@ -47,7 +47,7 @@ header('Location: index2.php');
             <section id="banner" data-video="images/banner0">
                <div class="inner">
                   <header>
-                     <h1>W00tflix</h1>
+                     <h2>W00tflix</h2>
                      <p>Tu mejor alternativa en entretenimiento e interaccion.</p>
                   </header>
                   <a href="pages/log-in/login.php" class="button big alt scrolly">Comenzar</a>

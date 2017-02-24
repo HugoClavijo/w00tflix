@@ -16,6 +16,11 @@ $CollectorObj->updateUsuarios($idusuarios, $nombre, $correo, $tipo, $usuario, $p
  
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
 <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
@@ -28,11 +33,9 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 ?>
 
 
-<!DOCTYPE html>
  
-<html lang="es">
  
-<head>
+ 
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -77,7 +80,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 
 <br><br>
 
-<center><p> **Usuario modificado con éxito** </p></center>
+<p> **Usuario modificado con éxito** </p>
 
 <br><br><br> 
 
@@ -118,16 +121,7 @@ echo "<tr> ";
 </div>
                                         	 
 
-								    </div>
-								  </div>
-								</form>
-
-
-</div>
-</div>
-</div>
-</div>
-
+								   
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

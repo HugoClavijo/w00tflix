@@ -66,7 +66,7 @@ session_start();
 			            <p>No tienes cuenta?</p>
 			            <a href="signup.php">Registrate</a>
 			        </div>
-			    </div>
+			    
 			</div>
 		</div>
 	</div>

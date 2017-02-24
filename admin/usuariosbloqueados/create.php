@@ -3,7 +3,12 @@
 $fecha_bloqueo=date("Y-m-d");
 ?>
 
-<?php
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
@@ -14,12 +19,6 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
 
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -63,7 +62,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 <div class="content-box-large">
 <div class="panel-heading">
 <div class="panel-body">
- <form class="form-horizontal" action="create_usuarios_bloqueados.php" method="GET"  role="form" enctype="multipart/form-data">
+ <form class="form-horizontal" action="create_usuarios_bloqueados.php" method="GET"   enctype="multipart/form-data">
 
 
 								 
