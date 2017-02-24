@@ -98,7 +98,7 @@ echo '<script>window.location.href = "../pages/log-in/login.php";</script>';
                     <li><a href="categorias_videos/read_categorias_videos.php"><i class="glyphicon glyphicon-cog"></i> Categorias Videos</a></li>
                     <li><a href="usuariosbloqueados/read_usuarios_bloqueados.php"><i class="glyphicon glyphicon-ban-circle"></i> Usuarios Bloqueados</a></li>
                     <li><a href="mensajesenviados/read_mensajes_enviados.php"><i class="glyphicon glyphicon-send"></i> Mensajes Enviados</a></li>
-                    <li><a href="detallevideos/read_detalle_videos.php"><i class="glyphicon glyphicon-film"></i> Detale Videos</a></li>
+                    <li><a href="detallevideos/read_detalle_videos.php"><i class="glyphicon glyphicon-film"></i> Detalle Videos</a></li>
                     
                 </ul>
              </div>
