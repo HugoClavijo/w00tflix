@@ -16,12 +16,9 @@ $CollectorObj->updateCategoriasVideos($idcategorias, $nombre, $descripcion, $fec
 ?>
 
 
-<!DOCTYPE html>
-<html>
-<head>
- <?php
+<?php
 if (isset($_SESSION['k_username'])) {
-echo  'Bienvenido, ';
+echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
 echo '<p><a href="../../pages/log-in/logout.php">Logout</a></p>';
 echo "<br><br>";
@@ -29,6 +26,15 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
+
+
+
+
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -111,9 +117,15 @@ echo "<tr> ";
 </div>
                                         	 
 
-								  
+								    </div>
+								  </div>
+								</form>
 
 
+</div>
+</div>
+</div>
+</div>
 
 
 
