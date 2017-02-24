@@ -13,7 +13,14 @@ $CollectorObj->deleteUsuarios_bloqueados($idusuario_bloqueado);
 //header("Location: read_demo.php");
 ?>
 
-<?php
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
@@ -23,14 +30,6 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
-
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />
@@ -68,7 +67,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 
 <br><br>
 
-<center><p> **Se ha borrado con éxito** </p></center>
+<p> **Se ha borrado con éxito** </p>
 
 <br><br><br> 
 
@@ -83,10 +82,10 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 <br><br><br>
 		     
    
-<center>
+
 <a class="btn btn-primary" href="read_usuarios_bloqueados.php">Regresar</a>
 
-</center>
+
    
 </div>
                                         	 

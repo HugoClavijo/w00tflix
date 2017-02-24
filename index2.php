@@ -40,15 +40,7 @@ session_start();
       <!-- Nav    -->
        
 	  
-         <nav id="menu2">
-		    <image class="ima" src="images/juancarlos.jpg" width="90px" />
-			<ul class="links2">
-			
-				<li><a href="#" class="boton2 button small alt ">Editar cuenta</a></li>
-				<li><a href="logout.php" class="boton1 button small alt ">Salir sesión</a></li>
-			</ul>
-         </nav>
-	       
+
           <nav id="menu">
             <ul class="links">
                <li><a href="index2.php">Home</a></li>
@@ -378,7 +370,7 @@ echo '<script>window.location.href = "pages/log-in/login.php";</script>';
                            <div class="image fit">
                               <img src="images/pic11.jpg" alt="" />
                               <div class="arrow">
-                                 <div class="icon fa-play"></d Pliv>
+                                 <div class="icon fa-play"></div>
                               </div>
                            </div>
                            <p class="caption">

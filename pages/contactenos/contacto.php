@@ -70,7 +70,7 @@ echo ' ';
                         <label>Comentario: </label>
                         <input type="text" placeholder="escriba su sugerencias o comentarios">
                         <br>
-                        <center><input type="submit"></center>
+                        <input type="submit">
                         
                     </form>
                 </div>

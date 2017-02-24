@@ -8,7 +8,15 @@ $fecha=$_GET['fecha'];
 ?>
 
 
-<?php
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
 echo '<b>'.$_SESSION['k_username'].'</b>.';
@@ -18,15 +26,6 @@ echo "<br><br>";
 echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 }
 ?>
-
-
-
-
-<!DOCTYPE html>
- 
-<html lang="es">
- 
-<head>
 <title>admin</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" href="../../estilos.css" />

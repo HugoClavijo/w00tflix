@@ -3,7 +3,11 @@ session_start();
 
 ?>
 
-<?php
+
+<!DOCTYPE HTML>
+<html lang="es">
+   <head> 
+   <?php
 if (isset($_SESSION['k_username'])) {
 echo 'Bienvenido, ';
  echo '<b>'.$_SESSION['k_username'].'</b>';
@@ -12,12 +16,7 @@ echo 'Bienvenido, ';
 echo ' ';
 }
 ?>
-
-
-<!DOCTYPE HTML>
-
-<html>
-   <head> 
+   
       <title>  W00tflix - Quiénes Somos</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -62,7 +61,7 @@ echo ' ';
             <section class="wrapper style1">
                <div class="inner">
                   <header class="align-center">
-                     <h2>Quienes Somos</h2>
+                     Quienes Somos
                      <p>Somos un Servicio que permite la interacción y la participación con la comunidad artística/gráfica, ofreciendo un espacio diferente, donde puedan mostrar su talento y/u obras artísticas.</p>
                   </header>
                   <!-- 2 Column Video Section -->
@@ -72,9 +71,9 @@ echo ' ';
                               <img src="../../images/seleccion-de-personal.jpg" alt="" />
                            </div>
                            <p class="caption">
-                            <center>
+                           
                               <a href="#main2" class="button big alt scrolly"><span><b>Nuestro Personal</b></span></a>
-                            </center>
+                            
                            </p>
                            
                      </div>
@@ -83,9 +82,9 @@ echo ' ';
                               <img src="../../images/propuesta.jpg" alt="" />
                            </div>
                            <p class="caption">
-                            <center>   
+                               
                                 <a href="#main1" class="button big alt scrolly"><span><b>Misión y Visión</b></span></a>
-                            </center>
+                            
                            </p>
                            
                         </div>
@@ -117,8 +116,8 @@ echo ' ';
                                   <b>Misión</b>
 
                             </p>
-                            <center><p>Ofrecemos un espacio para La libre interacción y participación de la comunidad artística/gráfica, donde puedan mostrar su talento y obras artísticas                    gracias a la tecnologia, los artistas usarían este espacio para promocionarse en vivo como por ejemplo los videos de transmisión que ocurren a miles km de                       distancia y hoy en día pueden ser vistos por muchas personas gracias a la tecnologia del streaming.
-                            </p></center>
+                            <p>Ofrecemos un espacio para La libre interacción y participación de la comunidad artística/gráfica, donde puedan mostrar su talento y obras artísticas                    gracias a la tecnologia, los artistas usarían este espacio para promocionarse en vivo como por ejemplo los videos de transmisión que ocurren a miles km de                       distancia y hoy en día pueden ser vistos por muchas personas gracias a la tecnologia del streaming.
+                            </p>
 
                          </div>
                             <div class="video col">
@@ -128,8 +127,8 @@ echo ' ';
                                   <b>Visión</b>
                                </p>
 
-                            <center><p>Nuestra propuesta de Solución, es la implementación de una plataforma web y aplicativo móvil, y de esta manera generar el espacio exclusivo para la interacción      social/digital de artistas en diferentes disciplinas,características y géneros, ademas de incluir la interacción directa con artistas locales y extranjeros, cuyo espacio de expresión libre, o socialización de proyectos, sera de mayor cobertura. 
-                            </p></center>
+                            <p>Nuestra propuesta de Solución, es la implementación de una plataforma web y aplicativo móvil, y de esta manera generar el espacio exclusivo para la interacción      social/digital de artistas en diferentes disciplinas,características y géneros, ademas de incluir la interacción directa con artistas locales y extranjeros, cuyo espacio de expresión libre, o socialización de proyectos, sera de mayor cobertura. 
+                            </p>
                             </div>
                          </div>
                    </div>
@@ -162,8 +161,8 @@ echo ' ';
                               <b>Diseño y Desarrollo</b>
                            
                         </p>
-                        <center><p>Hugo Clavijo.
-                        </p></center>
+                        <p>Hugo Clavijo.
+                        </p>
                            
                         </div>
                         <div class="video col">
@@ -175,8 +174,8 @@ echo ' ';
                               <b>Diseño y Contenido</b>
                            </p>
 
-                        <center><p>Juan Carlos Carrera
-                        </p></center>
+                        <p>Juan Carlos Carrera
+                        </p>
                         </div>
                         <div class="video col">
                            <div class="image fit">
@@ -187,8 +186,8 @@ echo ' ';
                               <b>Desarrollo y Contenido</b>
                            
                         </p>
-                        <center><p>David Robelly.
-                        </p></center>
+                        <p>David Robelly.
+                        </p>
                            
                         </div>
                         <div class="video col">
@@ -200,14 +199,15 @@ echo ' ';
                               <b>Desarrollo</b>
                            </p>
 
-                        <center><p>Carlos Monroy. 
-                        </p></center>
+                        <p>Carlos Monroy. 
+                        </p>
                         </div>
                      </div>
                </div>
             </section>
 
          </div>
+           </div>
          <!-- Two -->
          
 
