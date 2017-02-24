@@ -87,7 +87,12 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 								    </div>
 								  </div>
 
-
+                                    <div class="form-group">
+								    <label for="fecha" class="col-sm-2 control-label">Fecha</label>
+								    <div class="col-sm-9">
+								      <input type="text" class="form-control" id="fecha"  name="fecha" placeholder="Ingresa la fecha" >
+								    </div>
+								  </div>
 
 
 

@@ -11,15 +11,15 @@ class categorias_videosCollector extends Collector{
     
         $categorias_videos = array();
         foreach ($rows as $c){
-            $aux = new categorias_videos($c{'idcategoria'},$c{'nombre'},$c{'descripcion'});
+            $aux = new categorias_videos($c{'idcategoria'},$c{'nombre'},$c{'descripcion'},$c{'fecha'});
       array_push($categorias_videos, $aux);        
         }
         return  $categorias_videos; 
     }
       
     
-  function createCategoriasVideos($nombre, $descripcion) {
-    $rows = self::$db->insertRow("INSERT into categorias (nombre, descripcion) values ('$nombre', '$descripcion')", null);             
+  function createCategoriasVideos($nombre, $descripcion, $fecha) {
+    $rows = self::$db->insertRow("INSERT into categorias (nombre, descripcion, fecha) values ('$nombre', '$descripcion', '$fecha')", null);             
   }
     
     
@@ -27,8 +27,8 @@ class categorias_videosCollector extends Collector{
     $rows = self::$db->deleteRow("DELETE FROM categorias where idcategoria = $idcategorias", null);             
   }
     
-  function updateCategoriasVideos($idcategorias, $nombre, $descripcion) {
-    $rows = self::$db->updateRow("UPDATE  categorias SET nombre='$nombre', descripcion='$descripcion' WHERE idcategoria=$idcategorias", null);             
+  function updateCategoriasVideos($idcategorias, $nombre, $descripcion, $fecha) {
+    $rows = self::$db->updateRow("UPDATE  categorias SET nombre='$nombre', descripcion='$descripcion', fecha='$fecha' WHERE idcategoria=$idcategorias", null);             
   }
         
 }

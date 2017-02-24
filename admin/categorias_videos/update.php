@@ -4,7 +4,7 @@
 $idcategorias =$_GET['idcategoria'];
 $nombre =$_GET['nombre'];
 $descripcion =$_GET['descripcion'];
-
+$fecha=$_GET['fecha'];
 ?>
 
 
@@ -99,7 +99,12 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 								  </div>
 
 
-
+									<div class="form-group">
+								    <label for="fecha" class="col-sm-2 control-label">fecha</label>
+								    <div class="col-sm-7">
+								      <input type="text" class="form-control" id="fecha"  name="fecha" placeholder="ingrese fecha" value="<?php print $fecha; ?>">
+								    </div>
+								  </div>
 
 
 

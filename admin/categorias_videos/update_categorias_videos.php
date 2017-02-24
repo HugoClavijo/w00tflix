@@ -4,12 +4,13 @@ session_start();
 $idcategorias=$_GET['idcategoria'];
 $nombre =$_GET['nombre'];
 $descripcion =$_GET['descripcion'];
+$fecha =$_GET['fecha'];
 
 include_once('../dataBase.php');
 include_once("categorias_videosCollector.php");
 
 $CollectorObj = new categorias_videosCollector();
-$CollectorObj->updateCategoriasVideos($idcategorias, $nombre, $descripcion);
+$CollectorObj->updateCategoriasVideos($idcategorias, $nombre, $descripcion, $fecha);
 
 
 ?>
@@ -78,7 +79,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 
 <br><br>
 
-<center><p> **Categoria modificado con éxito** </p></center>
+<p> **Categoria modificado con éxito** </p>
 
 <br><br><br> 
 
@@ -90,13 +91,14 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 				                  <th>id</th>
 				                  <th>Nombre</th>
 				                  <th>Descripción</th>
+				                  <th>Fecha</th>
 				                </tr>
 				              </thead>
 
 <?php
 echo "<tbody>";
 echo "<tr> ";
- echo "<td>".$idcategorias. " </td><td> " .$nombre. " </td><td> " .$descripcion. " </td>";
+ echo "<td>".$idcategorias. " </td><td> " .$nombre. " </td><td> " .$descripcion. " </td><td> " .$fecha. " </td>";
 ?>
 </table>
 

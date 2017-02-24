@@ -69,7 +69,7 @@ echo '<script>window.location.href = "../../pages/log-in/login.php";</script>';
 				                  <th>id</th>
 				                  <th>Descripcion</th>
 				                  <th>Nombre</th>
-				                  <th></th>
+				                  <th>Fecha</th>
 				                  <th></th>
 				                </tr>
 				              </thead>
@@ -92,9 +92,9 @@ foreach ($cateObj->showCategoriasVideos() as $c){
 foreach ($cateObj->showCategoriasVideos() as $c){
 echo "<tbody>";
 echo "<tr> ";
-  echo "<td>".$c->getIdCategorias() . " </td><td>" .$c->getDescripcion(). " </td><td> " .$c->getNombre(). "</td>";
+  echo "<td>".$c->getIdCategorias() . " </td><td>" .$c->getDescripcion(). " </td><td> " .$c->getNombre(). "</td><td>".$c->getFecha() . " </td>";
   echo " ";
-  echo "<td><a href='update.php?idcategoria=".$c->getIdCategorias()."&nombre="  .$c->getNombre()."&descripcion="  .$c->getDescripcion(). "'>editar</a></td>";
+  echo "<td><a href='update.php?idcategoria=".$c->getIdCategorias()."&nombre="  .$c->getNombre()."&descripcion="  .$c->getDescripcion(). "&fecha="  .$c->getFecha(). "'>editar</a></td>";
   echo " ";
   echo "<td><a href='delete_categorias_videos.php?idcategoria=".$c->getIdCategorias()."'>eliminar</a></td>";
      
