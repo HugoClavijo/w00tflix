@@ -1,6 +1,7 @@
 <?php
 //AQUI CONECTAMOS A LA BASE DE DATOS DE POSTGRES
-$conex = "host=localhost port=5432 dbname=wootflix user=postgres password=postgres";
+//$conex = "host=localhost port=5432 dbname=wootflix user=postgres password=postgres";
+$conex = "host=ec2-54-83-47-194.compute-1.amazonaws.com port=5432 dbname=d6qllf068lhdn5 user=joxdnzutsohxym password=219905459ac4abd0692899069a8fdeba4a9504e487b9e9eaeb2b11473627cab2";
 $cnx = pg_connect($conex) or die ("<h1>Error de conexion.</h1> ". pg_last_error());
 session_start();
 
