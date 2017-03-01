@@ -1,1 +1,5 @@
-{}
+{
+    "require": {
+        "phpunit/phpunit": "6.*"
+    }
+}
